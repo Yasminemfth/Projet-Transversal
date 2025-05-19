@@ -4,7 +4,7 @@ using UnityEngine;
 public class PlayerController : MonoBehaviour
 {
     public float speed = 5f;
-    public bool animationVerticaleActive = false; // Visible dans l'inspecteur
+    public bool animationVerticaleActive = false;
 
     private Vector2 moveInput;
     private Rigidbody2D rb;
@@ -24,7 +24,10 @@ public class PlayerController : MonoBehaviour
         if (animator != null)
         {
             bool movingVertically = Mathf.Abs(moveInput.y) > 0.1f;
-            animator.SetBool("VerticalInput", animationVerticaleActive && movingVertically);
+            bool shouldAnimate = animationVerticaleActive && movingVertically;
+            animator.SetBool("VerticalInput", shouldAnimate);
+
+            Debug.Log($"Vertical: {moveInput.y}, Active: {shouldAnimate}");
         }
     }
 
