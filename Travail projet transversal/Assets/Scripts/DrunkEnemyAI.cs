@@ -21,7 +21,6 @@ public class DrunkEnemyAI : MonoBehaviour
         if (data != null)
         {
             speed = data.speed;
-            
         }
         else
         {
@@ -38,16 +37,13 @@ public class DrunkEnemyAI : MonoBehaviour
         Transform target = cheminActuel[currentPoint];
         transform.position = Vector2.MoveTowards(transform.position, target.position, speed * Time.deltaTime);
 
-        if (Vector2.Distance(transform.position, target.position) < 0.1f)
+        if (Vector2.Distance(transform.position, target.position) < 0.2f)
         {
             currentPoint++;
 
             if (currentPoint >= cheminActuel.Length)
             {
-                if (versPointSpecial)
-                    isStopped = true;
-                else
-                    currentPoint = 0;
+                currentPoint = 0; // boucle sur le chemin au lieu de s'arrêter
             }
         }
     }
@@ -60,6 +56,19 @@ public class DrunkEnemyAI : MonoBehaviour
         currentPoint = 0;
         versPointSpecial = true;
         isStopped = false;
+    }
+
+    public void AllerAuPointSpecial(Transform[] nouveauChemin)
+    {
+        if (nouveauChemin == null || nouveauChemin.Length == 0) return;
+
+        cheminVersPointSpecial = nouveauChemin;
+        cheminActuel = cheminVersPointSpecial;
+        currentPoint = 0;
+        versPointSpecial = true;
+        isStopped = false;
+
+        Debug.Log($"[{gameObject.name}] Reçu nouveau chemin spécial de {nouveauChemin.Length} waypoints.");
     }
 
     public void ReprendrePatrouille()
