@@ -26,7 +26,7 @@ public class PlayerController : MonoBehaviour
 
         FlipBasedOnInput();
 
-        //if (animator != null && animationVerticaleActive)
+        if (animator != null && animationVerticaleActive)
         {
             bool isMovingUp = moveInput.y > 0.1f;
             bool isMovingDown = moveInput.y < -0.1f;
@@ -38,7 +38,6 @@ public class PlayerController : MonoBehaviour
             animator.SetBool("IsMovingRight", isMovingRight);
             animator.SetBool("IsMovingLeft", isMovingLeft);
 
-            Debug.Log($"Up: {isMovingUp}, Down: {isMovingDown}, Right: {isMovingRight}, Left: {isMovingLeft}");
         }
     }
 
