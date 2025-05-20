@@ -24,9 +24,31 @@ public class PlayerController : MonoBehaviour
         moveInput.x = Input.GetAxis("Horizontal");
         moveInput.y = Input.GetAxis("Vertical");
 
-        HandleAnimation();
-        HandleFlip();
+        FlipBasedOnInput();
+
+        //if (animator != null && animationVerticaleActive)
+        {
+            bool isMovingUp = moveInput.y > 0.1f;
+            bool isMovingDown = moveInput.y < -0.1f;
+            bool isMovingRight = moveInput.x > 0.1f;
+            bool isMovingLeft = moveInput.x < -0.1f;
+
+            animator.SetBool("IsMovingUp", isMovingUp);
+            animator.SetBool("IsMovingDown", isMovingDown);
+            animator.SetBool("IsMovingRight", isMovingRight);
+            animator.SetBool("IsMovingLeft", isMovingLeft);
+
+            Debug.Log($"Up: {isMovingUp}, Down: {isMovingDown}, Right: {isMovingRight}, Left: {isMovingLeft}");
+        }
     }
+
+    void FlipBasedOnInput()
+        {
+            if (moveInput.x > 0.1f)
+                spriteRenderer.flipX = false;
+            else if (moveInput.x < -0.1f)
+                spriteRenderer.flipX = true;
+        }
 
     void HandleAnimation()
     {

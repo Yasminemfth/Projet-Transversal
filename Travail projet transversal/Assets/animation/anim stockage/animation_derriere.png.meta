@@ -126,10 +126,10 @@ TextureImporter:
         serializedVersion: 2
         x: 124
         y: 6
-        width: 146
-        height: 522
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        width: 147
+        height: 536
+      alignment: 9
+      pivot: {x: 0.4825728, y: 0.43468055}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -143,37 +143,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: animation_derriere_1
-      rect:
-        serializedVersion: 2
-        x: 145
-        y: 507
-        width: 34
-        height: 37
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 3cf3acfda0d31fc30800000000000000
-      internalID: 4391358228576485315
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
       name: animation_derriere_2
       rect:
         serializedVersion: 2
         x: 346
         y: 6
-        width: 147
-        height: 502
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        width: 150
+        height: 528
+      alignment: 9
+      pivot: {x: 0.46014974, y: 0.4320736}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -187,37 +165,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: animation_derriere_3
-      rect:
-        serializedVersion: 2
-        x: 366
-        y: 499
-        width: 38
-        height: 32
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 5d645d82684aced70800000000000000
-      internalID: 9073808245362345685
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
       name: animation_derriere_4
       rect:
         serializedVersion: 2
         x: 629
         y: 0
-        width: 143
-        height: 511
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        width: 141
+        height: 537
+      alignment: 9
+      pivot: {x: 0.4273249, y: 0.4363924}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -231,37 +187,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: animation_derriere_5
-      rect:
-        serializedVersion: 2
-        x: 637
-        y: 502
-        width: 35
-        height: 32
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: c126338440a62ecb0800000000000000
-      internalID: -4836186483218750948
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
       name: animation_derriere_6
       rect:
         serializedVersion: 2
         x: 891
         y: 1
-        width: 147
-        height: 512
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        width: 138
+        height: 539
+      alignment: 9
+      pivot: {x: 0.45668495, y: 0.42712274}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -274,33 +208,11 @@ TextureImporter:
       indices: 
       edges: []
       weights: []
-    - serializedVersion: 2
-      name: animation_derriere_7
-      rect:
-        serializedVersion: 2
-        x: 903
-        y: 504
-        width: 35
-        height: 32
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: be437b2a764bce3a0800000000000000
-      internalID: -6634729793819036437
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
     outline: []
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: c299a3c9974c7f84ebca74b222a8a55a
     internalID: 0
     vertices: []
     indices: 
@@ -309,7 +221,11 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      animation_derriere_0: -920692822573969279
+      animation_derriere_2: -8775329217930707546
+      animation_derriere_4: -1567164539580228961
+      animation_derriere_6: -9035079457364376983
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
