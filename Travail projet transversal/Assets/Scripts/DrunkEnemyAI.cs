@@ -15,18 +15,16 @@ public class DrunkEnemyAI : MonoBehaviour
     private bool versPointSpecial = false;
 
     private float speed;
+    private Animator animator;
 
     private void Start()
     {
+        animator = GetComponent<Animator>();
+
         if (data != null)
-        {
             speed = data.speed;
-            
-        }
         else
-        {
             Debug.LogWarning(" EnemyData non mis sur " + gameObject.name);
-        }
 
         cheminActuel = cheminPatrouille;
     }
@@ -36,7 +34,12 @@ public class DrunkEnemyAI : MonoBehaviour
         if (isStopped || cheminActuel == null || cheminActuel.Length == 0) return;
 
         Transform target = cheminActuel[currentPoint];
+        Vector2 direction = (target.position - transform.position).normalized;
+
         transform.position = Vector2.MoveTowards(transform.position, target.position, speed * Time.deltaTime);
+
+        if (animator != null)
+            MettreAJourAnimations(direction);
 
         if (Vector2.Distance(transform.position, target.position) < 0.1f)
         {
@@ -50,6 +53,19 @@ public class DrunkEnemyAI : MonoBehaviour
                     currentPoint = 0;
             }
         }
+    }
+
+    private void MettreAJourAnimations(Vector2 dir)
+    {
+        bool isUp = dir.y > 0.5f;
+        bool isDown = dir.y < -0.5f;
+        bool isRight = dir.x > 0.5f;
+        bool isLeft = dir.x < -0.5f;
+
+        animator.SetBool("IsUp", isUp);
+        animator.SetBool("IsDown", isDown);
+        animator.SetBool("IsRight", isRight);
+        animator.SetBool("IsLeft", isLeft);
     }
 
     public void AllerAuPointSpecial()

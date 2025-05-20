@@ -1,0 +1,233 @@
+fileFormatVersion: 2
+guid: 5225c9ec170893145aa8ddec89b8e786
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 5301223235864663670
+    second: Bourre_side_walk_1_0
+  - first:
+      213: -8710395066642643245
+    second: Bourre_side_walk_1_1
+  - first:
+      213: 4218038000624307360
+    second: Bourre_side_walk_1_2
+  - first:
+      213: -1541270079991542327
+    second: Bourre_side_walk_1_3
+  - first:
+      213: -6099766824125617672
+    second: Bourre_side_walk_1_4
+  - first:
+      213: 1421582190061666482
+    second: Bourre_side_walk_1_5
+  - first:
+      213: -6450240377666417242
+    second: Bourre_side_walk_1_6
+  - first:
+      213: -5265907873814156011
+    second: Bourre_side_walk_1_7
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Bourre_side_walk_1_1
+      rect:
+        serializedVersion: 2
+        x: 459
+        y: 17
+        width: 157
+        height: 553
+      alignment: 9
+      pivot: {x: 0.65659326, y: 0.47866026}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3d6437726d57e1780800000000000000
+      internalID: -8710395066642643245
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bourre_side_walk_1_4
+      rect:
+        serializedVersion: 2
+        x: 1089
+        y: 29
+        width: 200
+        height: 551
+      alignment: 9
+      pivot: {x: 0.68192995, y: 0.48750663}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8f9a7433466495ba0800000000000000
+      internalID: -6099766824125617672
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bourre_side_walk_1_6
+      rect:
+        serializedVersion: 2
+        x: 180
+        y: 17
+        width: 203
+        height: 550
+      alignment: 9
+      pivot: {x: 0.41280165, y: 0.4642399}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6adcf452d842c76a0800000000000000
+      internalID: -6450240377666417242
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bourre_side_walk_1_7
+      rect:
+        serializedVersion: 2
+        x: 730
+        y: 17
+        width: 279
+        height: 534
+      alignment: 9
+      pivot: {x: 0.50704944, y: 0.49999994}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 51def5150bcbbe6b0800000000000000
+      internalID: -5265907873814156011
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 84678793bbabc5143acf65e4a8a7a836
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      Bourre_side_walk_1_1: -8710395066642643245
+      Bourre_side_walk_1_4: -6099766824125617672
+      Bourre_side_walk_1_6: -6450240377666417242
+      Bourre_side_walk_1_7: -5265907873814156011
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
