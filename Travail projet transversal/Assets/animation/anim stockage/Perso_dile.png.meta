@@ -1,34 +1,13 @@
 fileFormatVersion: 2
-guid: 07c383da27d243840a5cf2ec1f781934
+guid: 8b63a072cd3b7814197bcfe59a752425
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 111160067647433232
-    second: back_walk_0
+      213: 5344036833620385733
+    second: Perso_dile_0
   - first:
-      213: -3904175000975480575
-    second: back_walk_1
-  - first:
-      213: -2148623205756327991
-    second: back_walk_2
-  - first:
-      213: 7711022709946569296
-    second: back_walk_3
-  - first:
-      213: -4752880428699556471
-    second: back_walk_4
-  - first:
-      213: 6977101850972792625
-    second: back_walk_5
-  - first:
-      213: -4881852583799819244
-    second: back_walk_6
-  - first:
-      213: -2970401967197841527
-    second: back_walk_7
-  - first:
-      213: 2860507910251048402
-    second: back_walk_8
+      213: 4682151082782713622
+    second: Perso_dile_1
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -124,89 +103,45 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: back_walk_0
+      name: Perso_dile_0
       rect:
         serializedVersion: 2
-        x: 236
-        y: 18
-        width: 157
-        height: 550
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        x: 37
+        y: 10
+        width: 178
+        height: 552
+      alignment: 9
+      pivot: {x: 0.5039872, y: 0.48585793}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 01a65591e7bea8100800000000000000
-      internalID: 111160067647433232
+      spriteID: 5cfdb8eaf25d92a40800000000000000
+      internalID: 5344036833620385733
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: back_walk_1
+      name: Perso_dile_1
       rect:
         serializedVersion: 2
-        x: 483
-        y: 19
-        width: 152
-        height: 560
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        x: 258
+        y: 11
+        width: 178
+        height: 572
+      alignment: 9
+      pivot: {x: 0.5039872, y: 0.47270474}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 10965e5958591d9c0800000000000000
-      internalID: -3904175000975480575
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: back_walk_5
-      rect:
-        serializedVersion: 2
-        x: 730
-        y: 12
-        width: 153
-        height: 560
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 13724fcca25a3d060800000000000000
-      internalID: 6977101850972792625
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: back_walk_6
-      rect:
-        serializedVersion: 2
-        x: 973
-        y: 19
-        width: 155
-        height: 556
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 414f9c0b0fc204cb0800000000000000
-      internalID: -4881852583799819244
+      spriteID: 61769f94a975af040800000000000000
+      internalID: 4682151082782713622
       vertices: []
       indices: 
       edges: []
@@ -215,7 +150,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: e3c0a850282a7cd4a9ea5acaa58ca3df
+    spriteID: 930548056a8988a4a855458581662546
     internalID: 0
     vertices: []
     indices: 
@@ -225,10 +160,8 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      back_walk_0: 111160067647433232
-      back_walk_1: -3904175000975480575
-      back_walk_5: 6977101850972792625
-      back_walk_6: -4881852583799819244
+      Perso_dile_0: 5344036833620385733
+      Perso_dile_1: 4682151082782713622
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

@@ -184,7 +184,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 5
-  animationVerticaleActive: 0
+  animationVerticaleActive: 1
 --- !u!61 &154318537
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -222,8 +222,8 @@ BoxCollider2D:
   m_Offset: {x: 0, y: 0}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.69579, y: 0.49999994}
-    oldSize: {x: 2.04, y: 5.58}
+    pivot: {x: 0.5039872, y: 0.48585793}
+    oldSize: {x: 1.78, y: 5.52}
     newSize: {x: 1, y: 1}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
@@ -2860,12 +2860,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cf67a59e0bed8c74982d632bc22d5e2e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  cheminPatrouille:
-  - {fileID: 530890721}
-  - {fileID: 119607464}
-  - {fileID: 1860382942}
-  speed: 2
-  versPointSpecial: 0
 --- !u!1 &1842259972
 GameObject:
   m_ObjectHideFlags: 0
