@@ -1,0 +1,351 @@
+fileFormatVersion: 2
+guid: 87b67a245cebc5244866b91f90db9420
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 8651019067495116189
+    second: Derriere_bourre_2_walk_0
+  - first:
+      213: -3213552028464627653
+    second: Derriere_bourre_2_walk_1
+  - first:
+      213: 6025575711991002150
+    second: Derriere_bourre_2_walk_2
+  - first:
+      213: 4273256150675094173
+    second: Derriere_bourre_2_walk_3
+  - first:
+      213: -7099936153863866825
+    second: Derriere_bourre_2_walk_4
+  - first:
+      213: -4895937040927288965
+    second: Derriere_bourre_2_walk_5
+  - first:
+      213: 2991951829516314025
+    second: Derriere_bourre_2_walk_6
+  - first:
+      213: -1588738451236687366
+    second: Derriere_bourre_2_walk_7
+  - first:
+      213: -3940774104198929925
+    second: Derriere_bourre_2_walk_8
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Derriere_bourre_2_walk_0
+      rect:
+        serializedVersion: 2
+        x: 87
+        y: 3
+        width: 173
+        height: 525
+      alignment: 9
+      pivot: {x: 0.42895076, y: 0.69461584}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d9d6d2fb1089e0870800000000000000
+      internalID: 8651019067495116189
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Derriere_bourre_2_walk_1
+      rect:
+        serializedVersion: 2
+        x: 305
+        y: 397
+        width: 13
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b30412cc47b2763d0800000000000000
+      internalID: -3213552028464627653
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Derriere_bourre_2_walk_2
+      rect:
+        serializedVersion: 2
+        x: 330
+        y: 0
+        width: 158
+        height: 543
+      alignment: 9
+      pivot: {x: 0.49513784, y: 0.69948256}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 624f1786f252f9350800000000000000
+      internalID: 6025575711991002150
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Derriere_bourre_2_walk_3
+      rect:
+        serializedVersion: 2
+        x: 500
+        y: 397
+        width: 13
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d9afd3f04d7ad4b30800000000000000
+      internalID: 4273256150675094173
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Derriere_bourre_2_walk_4
+      rect:
+        serializedVersion: 2
+        x: 521
+        y: 3
+        width: 173
+        height: 524
+      alignment: 9
+      pivot: {x: 0.5666084, y: 0.690589}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 736bdf46fa5f77d90800000000000000
+      internalID: -7099936153863866825
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Derriere_bourre_2_walk_5
+      rect:
+        serializedVersion: 2
+        x: 62
+        y: 387
+        width: 13
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b711ad873332e0cb0800000000000000
+      internalID: -4895937040927288965
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Derriere_bourre_2_walk_6
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 384
+        width: 14
+        height: 9
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9a5666f365c858920800000000000000
+      internalID: 2991951829516314025
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Derriere_bourre_2_walk_7
+      rect:
+        serializedVersion: 2
+        x: 511
+        y: 385
+        width: 14
+        height: 9
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: af1780dcbcaa3f9e0800000000000000
+      internalID: -1588738451236687366
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Derriere_bourre_2_walk_8
+      rect:
+        serializedVersion: 2
+        x: 706
+        y: 388
+        width: 13
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bf12a23d4de8f49c0800000000000000
+      internalID: -3940774104198929925
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: d62d4c6ccdd4ff548901cc3bdc4532b8
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      Derriere_bourre_2_walk_0: 8651019067495116189
+      Derriere_bourre_2_walk_1: -3213552028464627653
+      Derriere_bourre_2_walk_2: 6025575711991002150
+      Derriere_bourre_2_walk_3: 4273256150675094173
+      Derriere_bourre_2_walk_4: -7099936153863866825
+      Derriere_bourre_2_walk_5: -4895937040927288965
+      Derriere_bourre_2_walk_6: 2991951829516314025
+      Derriere_bourre_2_walk_7: -1588738451236687366
+      Derriere_bourre_2_walk_8: -3940774104198929925
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

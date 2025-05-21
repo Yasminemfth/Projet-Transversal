@@ -180,6 +180,10 @@ MonoBehaviour:
   - {fileID: 0}
   intervalleDeTemps: 0.5
   bonheurParIntervalle: 1
+  activationMinDelay: 5
+  activationMaxDelay: 10
+  zoneRenderer: {fileID: 0}
+  waypointContainer: {fileID: 0}
 --- !u!1 &8927372476510305148
 GameObject:
   m_ObjectHideFlags: 0
@@ -258,7 +262,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 4
-  m_Sprite: {fileID: -8206780490526076562, guid: 66da04136b7189e4b94480564b47aa8e, type: 3}
+  m_Sprite: {fileID: -6775448112738897667, guid: ba8a8c95f80e6424dace8668d027c3b6, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -307,7 +311,7 @@ BoxCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 7.16, y: 5.42}
+    oldSize: {x: 8.56, y: 5.44}
     newSize: {x: 7.16, y: 5.42}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
