@@ -1,44 +1,30 @@
+// SafeZone.cs
 using UnityEngine;
-using System.Collections;
+using System.Collections.Generic;
 
 public class SafeZone : MonoBehaviour
 {
-    public DrunkEnemyAI[] ennemis;          // Liste des bourrés à gérer
-    public float delaiRespawn = 5f;         // Temps avant qu'ils reviennent
-
+    public int nombreASupprimer = 2; // combien d'ennemis on veut retirer
     private bool joueurDansZone = false;
 
     void Update()
     {
         if (joueurDansZone && Input.GetKeyDown(KeyCode.E))
         {
-            foreach (DrunkEnemyAI ennemi in ennemis)
+            List<DrunkEnemyAI> tous = new List<DrunkEnemyAI>(FindObjectsOfType<DrunkEnemyAI>());
+            if (tous.Count == 0) return;
+
+            int suppr = Mathf.Min(nombreASupprimer, tous.Count);
+            for (int i = 0; i < suppr; i++)
             {
-                if (ennemi != null)
+                DrunkEnemyAI cible = tous[i];
+                if (cible != null)
                 {
-                    ennemi.gameObject.SetActive(false); // Supprime temporairement
+                    Debug.Log("☠ Suppression bourré : " + cible.name);
+                    Destroy(cible.gameObject);
                 }
             }
-
-            Debug.Log(" Bourrés retirés. Réapparition dans " + delaiRespawn + "s.");
-            StartCoroutine(RetourDesBourres());
         }
-    }
-
-    private IEnumerator RetourDesBourres()
-    {
-        yield return new WaitForSeconds(delaiRespawn);
-
-        foreach (DrunkEnemyAI ennemi in ennemis)
-        {
-            if (ennemi != null)
-            {
-                ennemi.gameObject.SetActive(true); //reviennent
-                ennemi.ReprendrePatrouille();      // reprennent leur trajet
-            }
-        }
-
-        Debug.Log("🔁 Les bourrés sont revenus !");
     }
 
     private void OnTriggerEnter2D(Collider2D other)
