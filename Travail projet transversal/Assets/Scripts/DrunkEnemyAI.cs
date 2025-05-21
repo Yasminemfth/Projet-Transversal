@@ -1,7 +1,5 @@
-// DrunkEnemyAI.cs
 using UnityEngine;
 
-[RequireComponent(typeof(SpriteRenderer))]
 public class DrunkEnemyAI : MonoBehaviour
 {
     [Header("Data")]
@@ -9,140 +7,75 @@ public class DrunkEnemyAI : MonoBehaviour
 
     [Header("Paths")]
     public Transform[] cheminPatrouille;
+    public Transform[] cheminVersPointSpecial;
 
-    private Transform[] cheminVersPointSpecial;
     private Transform[] cheminActuel;
     private int currentPoint = 0;
     private bool isStopped = false;
     private bool versPointSpecial = false;
 
     private float speed;
-<<<<<<< Updated upstream
-
-    private void Start()
-    {
-=======
     private Animator animator;
-    private Vector2 lastDirection;
-    private SpriteRenderer spriteRenderer;
 
     private void Start()
     {
         animator = GetComponent<Animator>();
-        spriteRenderer = GetComponent<SpriteRenderer>();
 
->>>>>>> Stashed changes
         if (data != null)
-        {
             speed = data.speed;
-        }
         else
-        {
             Debug.LogWarning(" EnemyData non mis sur " + gameObject.name);
-        }
 
         cheminActuel = cheminPatrouille;
     }
 
     private void Update()
     {
-        if (isStopped || cheminActuel == null || cheminActuel.Length == 0)
-        {
-            if (isStopped)
-                Debug.Log(name + " est stoppé");
-
-            SetIdleAnimation();
-            return;
-        }
+        if (isStopped || cheminActuel == null || cheminActuel.Length == 0) return;
 
         Transform target = cheminActuel[currentPoint];
+        Vector2 direction = (target.position - transform.position).normalized;
+
         transform.position = Vector2.MoveTowards(transform.position, target.position, speed * Time.deltaTime);
 
-<<<<<<< Updated upstream
-        if (Vector2.Distance(transform.position, target.position) < 0.2f)
-=======
-        if (direction != Vector2.zero)
-        {
-            lastDirection = direction;
+        if (animator != null)
+            MettreAJourAnimations(direction);
 
-            if (animator != null)
-            {
-                MettreAJourAnimations(direction);
-            }
-
-            UpdateSpriteFlip(direction);
-        }
-
-        if (Vector2.Distance(transform.position, target.position) < 0.1f);
->>>>>>> Stashed changes
+        if (Vector2.Distance(transform.position, target.position) < 0.1f)
         {
             currentPoint++;
 
             if (currentPoint >= cheminActuel.Length)
             {
-                currentPoint = 0; // boucle sur le chemin au lieu de s'arrêter
+                if (versPointSpecial)
+                    isStopped = true;
+                else
+                    currentPoint = 0;
             }
         }
     }
 
-<<<<<<< Updated upstream
-    public void AllerAuPointSpecial()
-=======
-    private void SetIdleAnimation()
-    {
-        if (animator == null) return;
-
-        animator.SetBool("IsUp", false);
-        animator.SetBool("IsDown", false);
-        animator.SetBool("IsRight", false);
-
-        if (lastDirection.y > 0.5f) animator.SetBool("IsUp", true);
-        else if (lastDirection.y < -0.5f) animator.SetBool("IsDown", true);
-        else if (Mathf.Abs(lastDirection.x) > 0.1f) animator.SetBool("IsRight", true);
-    }
-
     private void MettreAJourAnimations(Vector2 dir)
-
     {
-        animator.SetBool("IsUp", dir.y > 0.5f);
-        animator.SetBool("IsDown", dir.y < -0.5f);
-        animator.SetBool("IsRight", Mathf.Abs(dir.x) > 0.1f);
+        bool isUp = dir.y > 0.5f;
+        bool isDown = dir.y < -0.5f;
+        bool isRight = dir.x > 0.5f;
+        bool isLeft = dir.x < -0.5f;
+
+        animator.SetBool("IsUp", isUp);
+        animator.SetBool("IsDown", isDown);
+        animator.SetBool("IsRight", isRight);
+        animator.SetBool("IsLeft", isLeft);
     }
 
-    private void UpdateSpriteFlip(Vector2 dir)
+    public void AllerAuPointSpecial()
     {
-        if (spriteRenderer == null) return;
-        spriteRenderer.flipX = dir.x < -0.1f;
-    }
+        if (cheminVersPointSpecial == null || cheminVersPointSpecial.Length == 0) return;
 
-    public void AllerAuPointSpecial(Transform[] chemin)
-    {
-        Debug.Log(name + " → AllerAuPointSpecial() appelé");
-
-        if (chemin == null || chemin.Length == 0)
-        {
-            Debug.LogWarning("Chemin vide pour " + name);
-            return;
-        }
-
-        cheminVersPointSpecial = chemin;
         cheminActuel = cheminVersPointSpecial;
         currentPoint = 0;
         versPointSpecial = true;
         isStopped = false;
-    }
-
-    public void AllerAuPointSpecial(Transform[] nouveauChemin)
-    {
-        if (nouveauChemin == null || nouveauChemin.Length == 0) return;
-
-        cheminVersPointSpecial = nouveauChemin;
-        cheminActuel = cheminVersPointSpecial;
-        currentPoint = 0;
-        versPointSpecial = true;
-        isStopped = false;
-
-        Debug.Log($"[{gameObject.name}] Reçu nouveau chemin spécial de {nouveauChemin.Length} waypoints.");
     }
 
     public void ReprendrePatrouille()
@@ -157,5 +90,4 @@ public class DrunkEnemyAI : MonoBehaviour
     {
         isStopped = true;
     }
-}
 }
