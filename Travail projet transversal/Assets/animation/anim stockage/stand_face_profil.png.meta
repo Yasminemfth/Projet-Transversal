@@ -147,6 +147,19 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
@@ -559,7 +572,25 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      stand_face_profil_0: -6775448112738897667
+      stand_face_profil_1: -5645499924005167555
+      stand_face_profil_10: 4586688392225024801
+      stand_face_profil_11: -4701802760492003556
+      stand_face_profil_12: 8407338596762001374
+      stand_face_profil_13: 1176271681174615040
+      stand_face_profil_14: -8265799773686234776
+      stand_face_profil_15: 6823257203160779555
+      stand_face_profil_16: -3146261479233280155
+      stand_face_profil_17: 5924173738760021671
+      stand_face_profil_2: 5787110937421062603
+      stand_face_profil_3: -5326084285347818472
+      stand_face_profil_4: 6421634260689647874
+      stand_face_profil_5: 1836026725035732340
+      stand_face_profil_6: -2965412083465830145
+      stand_face_profil_7: 6587497499711970287
+      stand_face_profil_8: 5445778038226026913
+      stand_face_profil_9: 8834381292018539917
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

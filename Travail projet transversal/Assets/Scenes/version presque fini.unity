@@ -119,6 +119,11 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
+--- !u!1 &37453473 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 294493002168949010, guid: 6ab2450b4b0c95c429f3994f2b596581, type: 3}
+  m_PrefabInstance: {fileID: 187287903}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &117162609
 GameObject:
   m_ObjectHideFlags: 0
@@ -245,7 +250,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b4c589909641b3e429ce8c1715a0b3ab, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 2
+  speed: 4
   animationVerticaleActive: 1
 --- !u!61 &154318537
 BoxCollider2D:
@@ -513,6 +518,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 294493002168949010, guid: 6ab2450b4b0c95c429f3994f2b596581, type: 3}
+      propertyPath: m_Name
+      value: ZonePoint3
+      objectReference: {fileID: 0}
     - target: {fileID: 2258520651995141721, guid: 6ab2450b4b0c95c429f3994f2b596581, type: 3}
       propertyPath: m_LocalPosition.x
       value: 9.2
@@ -601,14 +610,30 @@ PrefabInstance:
       propertyPath: 'bourres.Array.data[1]'
       value: 
       objectReference: {fileID: 0}
+    - target: {fileID: 6780112373809274828, guid: 6ab2450b4b0c95c429f3994f2b596581, type: 3}
+      propertyPath: ennemisAvecPoints.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6780112373809274828, guid: 6ab2450b4b0c95c429f3994f2b596581, type: 3}
+      propertyPath: ennemisAvecPoints.Array.data[0].ennemi
+      value: 
+      objectReference: {fileID: 1158108390}
+    - target: {fileID: 6780112373809274828, guid: 6ab2450b4b0c95c429f3994f2b596581, type: 3}
+      propertyPath: ennemisAvecPoints.Array.data[0].pointCible
+      value: 
+      objectReference: {fileID: 126918433}
     - target: {fileID: 8927372476510305148, guid: 6ab2450b4b0c95c429f3994f2b596581, type: 3}
       propertyPath: m_Name
       value: stand_1 (2)
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 6780112373809274828, guid: 6ab2450b4b0c95c429f3994f2b596581, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 8927372476510305148, guid: 6ab2450b4b0c95c429f3994f2b596581, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 802607748}
   m_SourcePrefab: {fileID: 100100000, guid: 6ab2450b4b0c95c429f3994f2b596581, type: 3}
 --- !u!1 &266580346
 GameObject:
@@ -673,15 +698,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cd52ae7419e026a49832a99678602d3b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  bourres:
-  - {fileID: 335374167}
-  - {fileID: 0}
+  ennemisAvecPoints: []
+  zoneVisual: {fileID: 0}
+  couleurActive: {r: 1, g: 1, b: 1, a: 1}
+  couleurInactive: {r: 1, g: 1, b: 1, a: 0.3}
   intervalleDeTemps: 0.5
   bonheurParIntervalle: 1
   activationMinDelay: 5
   activationMaxDelay: 10
-  zoneRenderer: {fileID: 297157245}
-  waypointContainer: {fileID: 1902912608}
 --- !u!61 &297157243
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -1249,6 +1273,62 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1614065984}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &578990944 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8927372476510305148, guid: 6ab2450b4b0c95c429f3994f2b596581, type: 3}
+  m_PrefabInstance: {fileID: 2020103831}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &578990945
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 578990944}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cd52ae7419e026a49832a99678602d3b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ennemisAvecPoints:
+  - ennemi: {fileID: 2063648971}
+    pointCible: {fileID: 1902912608}
+  zoneVisual: {fileID: 995700601}
+  couleurActive: {r: 0.27880818, g: 1, b: 0.096226394, a: 1}
+  couleurInactive: {r: 0.7584905, g: 0.25616938, b: 0.25616938, a: 0.3}
+  intervalleDeTemps: 0.5
+  bonheurParIntervalle: 1
+  activationMinDelay: 5
+  activationMaxDelay: 10
+--- !u!1 &580351055 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8927372476510305148, guid: 6ab2450b4b0c95c429f3994f2b596581, type: 3}
+  m_PrefabInstance: {fileID: 6909349154443172942}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &580351057
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 580351055}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cd52ae7419e026a49832a99678602d3b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ennemisAvecPoints:
+  - ennemi: {fileID: 2063648971}
+    pointCible: {fileID: 456347797}
+  - ennemi: {fileID: 1158108390}
+    pointCible: {fileID: 2141370949}
+  zoneVisual: {fileID: 1342782422}
+  couleurActive: {r: 0, g: 1, b: 0.03171587, a: 1}
+  couleurInactive: {r: 1, g: 0, b: 0, a: 0.5529412}
+  intervalleDeTemps: 0.5
+  bonheurParIntervalle: 1
+  activationMinDelay: 5
+  activationMaxDelay: 10
 --- !u!1 &643002123
 GameObject:
   m_ObjectHideFlags: 0
@@ -1684,6 +1764,35 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 88c7e312a387e4249912a7d88f762836, type: 3}
+--- !u!1 &802607747 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8927372476510305148, guid: 6ab2450b4b0c95c429f3994f2b596581, type: 3}
+  m_PrefabInstance: {fileID: 187287903}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &802607748
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 802607747}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cd52ae7419e026a49832a99678602d3b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ennemisAvecPoints:
+  - ennemi: {fileID: 1158108390}
+    pointCible: {fileID: 126918433}
+  - ennemi: {fileID: 335374167}
+    pointCible: {fileID: 1982358928}
+  zoneVisual: {fileID: 37453473}
+  couleurActive: {r: 0, g: 1, b: 0.09687185, a: 1}
+  couleurInactive: {r: 1, g: 0, b: 0, a: 0.3}
+  intervalleDeTemps: 0.5
+  bonheurParIntervalle: 1
+  activationMinDelay: 5
+  activationMaxDelay: 10
 --- !u!1 &818105355
 GameObject:
   m_ObjectHideFlags: 0
@@ -2286,6 +2395,11 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!1 &995700601 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 294493002168949010, guid: 6ab2450b4b0c95c429f3994f2b596581, type: 3}
+  m_PrefabInstance: {fileID: 2020103831}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1059850439
 GameObject:
   m_ObjectHideFlags: 0
@@ -2349,13 +2463,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cd52ae7419e026a49832a99678602d3b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  bourres: []
+  ennemisAvecPoints: []
+  zoneVisual: {fileID: 0}
+  couleurActive: {r: 1, g: 1, b: 1, a: 1}
+  couleurInactive: {r: 1, g: 1, b: 1, a: 0.3}
   intervalleDeTemps: 0.5
   bonheurParIntervalle: 5
   activationMinDelay: 5
   activationMaxDelay: 10
-  zoneRenderer: {fileID: 0}
-  waypointContainer: {fileID: 0}
 --- !u!61 &1140445539
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -2499,6 +2614,17 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1158108390 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 1907263440365902820, guid: 4ed16799f0db0e94a8f175ecf75895c3, type: 3}
+  m_PrefabInstance: {fileID: 2181632528205874964}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a6e6181c6a4fec74b90d0b6560d68538, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1217176008
 GameObject:
   m_ObjectHideFlags: 0
@@ -2620,8 +2746,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   ennemis:
   - {fileID: 335374167}
-  - {fileID: 0}
-  - {fileID: 0}
+  - {fileID: 1158108390}
+  - {fileID: 2063648971}
   delaiRespawn: 7
 --- !u!61 &1293533736
 BoxCollider2D:
@@ -2766,6 +2892,11 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1342782422 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 294493002168949010, guid: 6ab2450b4b0c95c429f3994f2b596581, type: 3}
+  m_PrefabInstance: {fileID: 6909349154443172942}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1405448465
 GameObject:
   m_ObjectHideFlags: 0
@@ -3061,6 +3192,7 @@ MonoBehaviour:
   bonheur: 30
   limiterBonheurMax: 1
   bonheurMax: 100
+  bonheurSlider: {fileID: 0}
 --- !u!4 &1580044236
 Transform:
   m_ObjectHideFlags: 0
@@ -3871,6 +4003,56 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1614065984}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1892727175
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1892727177}
+  - component: {fileID: 1892727176}
+  m_Layer: 0
+  m_Name: ZoneManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1892727176
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1892727175}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 854447b17aa0415448dda2e1d90c9ba3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  toutesLesZones:
+  - {fileID: 580351057}
+  - {fileID: 578990945}
+  - {fileID: 802607748}
+  - {fileID: 1140445538}
+  tempsEntreChangements: 10
+--- !u!4 &1892727177
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1892727175}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -0.6558214, y: 0.576247, z: 0.026576312}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1902912607
 GameObject:
   m_ObjectHideFlags: 0
@@ -3989,10 +4171,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: stand_1 (1)
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 6780112373809274828, guid: 6ab2450b4b0c95c429f3994f2b596581, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 8927372476510305148, guid: 6ab2450b4b0c95c429f3994f2b596581, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 578990945}
   m_SourcePrefab: {fileID: 100100000, guid: 6ab2450b4b0c95c429f3994f2b596581, type: 3}
 --- !u!1 &2056636845
 GameObject:
@@ -4127,6 +4313,17 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 0}
+--- !u!114 &2063648971 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 5180758694360200345, guid: 88c7e312a387e4249912a7d88f762836, type: 3}
+  m_PrefabInstance: {fileID: 801482512}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a6e6181c6a4fec74b90d0b6560d68538, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &2126898141
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -4374,6 +4571,10 @@ PrefabInstance:
     m_TransformParent: {fileID: 0}
     m_Modifications:
     - target: {fileID: 294493002168949010, guid: 6ab2450b4b0c95c429f3994f2b596581, type: 3}
+      propertyPath: m_Name
+      value: ZonePoint2.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 294493002168949010, guid: 6ab2450b4b0c95c429f3994f2b596581, type: 3}
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
@@ -4429,14 +4630,30 @@ PrefabInstance:
       propertyPath: 'bourres.Array.data[1]'
       value: 
       objectReference: {fileID: 0}
+    - target: {fileID: 6780112373809274828, guid: 6ab2450b4b0c95c429f3994f2b596581, type: 3}
+      propertyPath: ennemisAvecPoints.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6780112373809274828, guid: 6ab2450b4b0c95c429f3994f2b596581, type: 3}
+      propertyPath: ennemisAvecPoints.Array.data[0].ennemi
+      value: 
+      objectReference: {fileID: 2063648971}
+    - target: {fileID: 6780112373809274828, guid: 6ab2450b4b0c95c429f3994f2b596581, type: 3}
+      propertyPath: ennemisAvecPoints.Array.data[0].pointCible
+      value: 
+      objectReference: {fileID: 456347797}
     - target: {fileID: 8927372476510305148, guid: 6ab2450b4b0c95c429f3994f2b596581, type: 3}
       propertyPath: m_Name
       value: stand_1
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 6780112373809274828, guid: 6ab2450b4b0c95c429f3994f2b596581, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 8927372476510305148, guid: 6ab2450b4b0c95c429f3994f2b596581, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 580351057}
   m_SourcePrefab: {fileID: 100100000, guid: 6ab2450b4b0c95c429f3994f2b596581, type: 3}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
@@ -4466,3 +4683,4 @@ SceneRoots:
   - {fileID: 2020103831}
   - {fileID: 187287903}
   - {fileID: 2181632528205874964}
+  - {fileID: 1892727177}
