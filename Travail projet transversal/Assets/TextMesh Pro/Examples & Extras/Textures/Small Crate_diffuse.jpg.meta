@@ -129,7 +129,23 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
+<<<<<<< Updated upstream:Travail projet transversal/Assets/TextMesh Pro/Examples & Extras/Textures/Small Crate_diffuse.jpg.meta
 >>>>>>> Stashed changes:Travail projet transversal/Assets/animation/anim stockage/sol.png.meta
+=======
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+>>>>>>> Stashed changes:Travail projet transversal/Assets/animation/anim stockage/scene1.png.meta
   spriteSheet:
     serializedVersion: 2
     sprites: []
@@ -148,7 +164,11 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
+<<<<<<< Updated upstream:Travail projet transversal/Assets/TextMesh Pro/Examples & Extras/Textures/Small Crate_diffuse.jpg.meta
       sol_0: 70364811865627504
+=======
+      scene1_0: -7244093059430438775
+>>>>>>> Stashed changes:Travail projet transversal/Assets/animation/anim stockage/scene1.png.meta
   mipmapLimitGroupName: 
 >>>>>>> Stashed changes:Travail projet transversal/Assets/animation/anim stockage/sol.png.meta
   pSDRemoveMatte: 0

@@ -1,7 +1,11 @@
 // AutoPointZone.cs
 using UnityEngine;
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
 using System.Collections;
+=======
+using System.Collections.Generic;
+>>>>>>> Stashed changes
 =======
 using System.Collections.Generic;
 >>>>>>> Stashed changes
@@ -13,8 +17,11 @@ public class AutoPointZone : MonoBehaviour
     public float intervalleDeTemps = 0.5f;
     public float bonheurParIntervalle = 1f;
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
     public float activationMinDelay = 5f;
     public float activationMaxDelay = 10f;
+=======
+>>>>>>> Stashed changes
 =======
 >>>>>>> Stashed changes
     public SpriteRenderer zoneRenderer;
@@ -24,6 +31,7 @@ public class AutoPointZone : MonoBehaviour
     private Transform[] cheminVersPointSpecial;
 
     private bool joueurDansZone = false;
+<<<<<<< Updated upstream
 <<<<<<< Updated upstream
     private bool isActive = false;
 =======
@@ -49,12 +57,21 @@ public class AutoPointZone : MonoBehaviour
 
         StartCoroutine(CycleActivation());
     }
+=======
+    private bool isActivated = false;
+    private float timer = 0f;
+    private List<DrunkEnemyAI> spawnedBourres = new List<DrunkEnemyAI>();
+>>>>>>> Stashed changes
 
-    void Update()
+    private void Start()
     {
+<<<<<<< Updated upstream
         if (joueurDansZone && isActive)
 =======
     {
+        if (waypointContainer != null)
+>>>>>>> Stashed changes
+=======
         if (waypointContainer != null)
 >>>>>>> Stashed changes
         {
@@ -101,6 +118,7 @@ public class AutoPointZone : MonoBehaviour
         if (!other.CompareTag("Player")) return;
 
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
             if (isActive)
             {
                 foreach (DrunkEnemyAI ennemi in bourres)
@@ -114,11 +132,16 @@ public class AutoPointZone : MonoBehaviour
             }
         }
 =======
+=======
+>>>>>>> Stashed changes
         joueurDansZone = true;
         timer = 0f;
 
         if (isActivated)
             AppelerEnnemis();
+<<<<<<< Updated upstream
+>>>>>>> Stashed changes
+=======
 >>>>>>> Stashed changes
     }
 
@@ -126,6 +149,7 @@ public class AutoPointZone : MonoBehaviour
     {
         if (!other.CompareTag("Player")) return;
 
+<<<<<<< Updated upstream
 <<<<<<< Updated upstream
             foreach (DrunkEnemyAI ennemi in bourres)
                 ennemi.ReprendrePatrouille();
@@ -171,12 +195,28 @@ public class AutoPointZone : MonoBehaviour
         {
             if (cheminVersPointSpecial != null && cheminVersPointSpecial.Length > 0)
             {
+=======
+        joueurDansZone = false;
+    }
+
+    private void AppelerEnnemis()
+    {
+        Debug.Log("→ AppelerEnnemis() appelé sur zone " + name);
+
+        foreach (DrunkEnemyAI ennemi in spawnedBourres)
+        {
+            if (cheminVersPointSpecial != null && cheminVersPointSpecial.Length > 0)
+            {
+>>>>>>> Stashed changes
                 Debug.Log("→ Appel AllerAuPointSpecial pour: " + ennemi.name);
                 ennemi.AllerAuPointSpecial(cheminVersPointSpecial);
             }
             else
             {
                 Debug.LogWarning("Aucun chemin spécial assigné à " + name);
+<<<<<<< Updated upstream
+>>>>>>> Stashed changes
+=======
 >>>>>>> Stashed changes
             }
         }

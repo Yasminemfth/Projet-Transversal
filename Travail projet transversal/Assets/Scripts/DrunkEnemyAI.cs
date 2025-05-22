@@ -59,8 +59,11 @@ public class DrunkEnemyAI : MonoBehaviour
         transform.position = Vector2.MoveTowards(transform.position, target.position, speed * Time.deltaTime);
 
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
         if (Vector2.Distance(transform.position, target.position) < 0.2f)
 =======
+=======
+>>>>>>> Stashed changes
         if (direction != Vector2.zero)
         {
             lastDirection = direction;
@@ -86,8 +89,11 @@ public class DrunkEnemyAI : MonoBehaviour
     }
 
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
     public void AllerAuPointSpecial()
 =======
+=======
+>>>>>>> Stashed changes
     private void SetIdleAnimation()
     {
         if (animator == null) return;
@@ -102,6 +108,9 @@ public class DrunkEnemyAI : MonoBehaviour
     }
 
     private void MettreAJourAnimations(Vector2 dir)
+<<<<<<< Updated upstream
+>>>>>>> Stashed changes
+=======
 >>>>>>> Stashed changes
     {
         animator.SetBool("IsUp", dir.y > 0.5f);
