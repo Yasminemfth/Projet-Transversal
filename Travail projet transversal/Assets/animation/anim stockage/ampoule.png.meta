@@ -1,0 +1,2249 @@
+fileFormatVersion: 2
+guid: 425a6e991584311429625dc243abb302
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -4871245585974112684
+    second: ampoule_0
+  - first:
+      213: 6288284922302755071
+    second: ampoule_1
+  - first:
+      213: -2749992608567756413
+    second: ampoule_2
+  - first:
+      213: -6852425938189362710
+    second: ampoule_3
+  - first:
+      213: -8120245338072708011
+    second: ampoule_4
+  - first:
+      213: 8585830710711863127
+    second: ampoule_5
+  - first:
+      213: -2974386458249240440
+    second: ampoule_6
+  - first:
+      213: 1371275427138047436
+    second: ampoule_7
+  - first:
+      213: -3121138927701571470
+    second: ampoule_8
+  - first:
+      213: -4043516515910951690
+    second: ampoule_9
+  - first:
+      213: 5573750697010460741
+    second: ampoule_10
+  - first:
+      213: 2365440039679790779
+    second: ampoule_11
+  - first:
+      213: 8928983234192385287
+    second: ampoule_12
+  - first:
+      213: -7287777137361748962
+    second: ampoule_13
+  - first:
+      213: 7049882540729752433
+    second: ampoule_14
+  - first:
+      213: 1840910588244087974
+    second: ampoule_15
+  - first:
+      213: 5894552077409465199
+    second: ampoule_16
+  - first:
+      213: 152581647528152683
+    second: ampoule_17
+  - first:
+      213: -4869825719482808119
+    second: ampoule_18
+  - first:
+      213: 7108874952443687603
+    second: ampoule_19
+  - first:
+      213: -940275824006505478
+    second: ampoule_20
+  - first:
+      213: -6862493424445017270
+    second: ampoule_21
+  - first:
+      213: 6245570935569217614
+    second: ampoule_22
+  - first:
+      213: -4749071713298254406
+    second: ampoule_23
+  - first:
+      213: 411025016927261836
+    second: ampoule_24
+  - first:
+      213: -4542627452197290334
+    second: ampoule_25
+  - first:
+      213: 206273373986393614
+    second: ampoule_26
+  - first:
+      213: 1824886835088419997
+    second: ampoule_27
+  - first:
+      213: -7736003838249148228
+    second: ampoule_28
+  - first:
+      213: -4045693191610167783
+    second: ampoule_29
+  - first:
+      213: -8498795439375985925
+    second: ampoule_30
+  - first:
+      213: -3917392348896871047
+    second: ampoule_31
+  - first:
+      213: 2347105093254457903
+    second: ampoule_32
+  - first:
+      213: -5476372933138398005
+    second: ampoule_33
+  - first:
+      213: -2101533378573742166
+    second: ampoule_34
+  - first:
+      213: -7928276850037892739
+    second: ampoule_35
+  - first:
+      213: 1688233456219809124
+    second: ampoule_36
+  - first:
+      213: -5909122561662533869
+    second: ampoule_37
+  - first:
+      213: -5409603048357631511
+    second: ampoule_38
+  - first:
+      213: -8553154205922103593
+    second: ampoule_39
+  - first:
+      213: -4127611105230032690
+    second: ampoule_40
+  - first:
+      213: 8810426480034200355
+    second: ampoule_41
+  - first:
+      213: -2022860602913367706
+    second: ampoule_42
+  - first:
+      213: 624320856980122006
+    second: ampoule_43
+  - first:
+      213: -2066586398510486036
+    second: ampoule_44
+  - first:
+      213: -6358945852832421168
+    second: ampoule_45
+  - first:
+      213: 5831352420823268045
+    second: ampoule_46
+  - first:
+      213: -9186970705374715436
+    second: ampoule_47
+  - first:
+      213: -3287712365151591148
+    second: ampoule_48
+  - first:
+      213: 5064384074916781663
+    second: ampoule_49
+  - first:
+      213: -5677773910166535173
+    second: ampoule_50
+  - first:
+      213: 7579793301704933242
+    second: ampoule_51
+  - first:
+      213: -7405830995456287653
+    second: ampoule_52
+  - first:
+      213: -6931044475896742419
+    second: ampoule_53
+  - first:
+      213: 1828130233894177496
+    second: ampoule_54
+  - first:
+      213: -4478785017439226094
+    second: ampoule_55
+  - first:
+      213: 5405803552190648459
+    second: ampoule_56
+  - first:
+      213: 9185053115781376381
+    second: ampoule_57
+  - first:
+      213: 3495234481539941750
+    second: ampoule_58
+  - first:
+      213: -8544711429328467494
+    second: ampoule_59
+  - first:
+      213: 4575852605167558833
+    second: ampoule_60
+  - first:
+      213: -1585673758835197821
+    second: ampoule_61
+  - first:
+      213: -6302981431423574378
+    second: ampoule_62
+  - first:
+      213: 6499735122384303016
+    second: ampoule_63
+  - first:
+      213: -7285253147179175888
+    second: ampoule_64
+  - first:
+      213: -5965446733722062092
+    second: ampoule_65
+  - first:
+      213: -4689009630761150706
+    second: ampoule_66
+  - first:
+      213: 8676790370685833314
+    second: ampoule_67
+  - first:
+      213: 4854462480734636852
+    second: ampoule_68
+  - first:
+      213: 5781656745609145321
+    second: ampoule_69
+  - first:
+      213: 6092227407916349655
+    second: ampoule_70
+  - first:
+      213: -5462005961793200842
+    second: ampoule_71
+  - first:
+      213: 7650987503485594813
+    second: ampoule_72
+  - first:
+      213: 8589542828854545118
+    second: ampoule_73
+  - first:
+      213: 4885551793670258190
+    second: ampoule_74
+  - first:
+      213: 2173000073105314150
+    second: ampoule_75
+  - first:
+      213: 2948416037797388692
+    second: ampoule_76
+  - first:
+      213: 5337431316524934104
+    second: ampoule_77
+  - first:
+      213: -1731530064711045025
+    second: ampoule_78
+  - first:
+      213: -20546455382315430
+    second: ampoule_79
+  - first:
+      213: 7673816807826776602
+    second: ampoule_80
+  - first:
+      213: -7840711832387170574
+    second: ampoule_81
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: ampoule_0
+      rect:
+        serializedVersion: 2
+        x: 443
+        y: 745
+        width: 20
+        height: 20
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 45ec252d2fbd56cb0800000000000000
+      internalID: -4871245585974112684
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ampoule_1
+      rect:
+        serializedVersion: 2
+        x: 468
+        y: 760
+        width: 20
+        height: 20
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ff0fc40f1d9744750800000000000000
+      internalID: 6288284922302755071
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ampoule_2
+      rect:
+        serializedVersion: 2
+        x: 397
+        y: 265
+        width: 1104
+        height: 568
+      alignment: 9
+      pivot: {x: 0.43209037, y: 0.43548584}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3897e57ea4016d9d0800000000000000
+      internalID: -2749992608567756413
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ampoule_3
+      rect:
+        serializedVersion: 2
+        x: 525
+        y: 747
+        width: 20
+        height: 20
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ae9dc883aea47e0a0800000000000000
+      internalID: -6852425938189362710
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ampoule_4
+      rect:
+        serializedVersion: 2
+        x: 553
+        y: 744
+        width: 19
+        height: 20
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 55c872f43e71f4f80800000000000000
+      internalID: -8120245338072708011
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ampoule_5
+      rect:
+        serializedVersion: 2
+        x: 1091
+        y: 754
+        width: 20
+        height: 20
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 757ce9daa8ff62770800000000000000
+      internalID: 8585830710711863127
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ampoule_6
+      rect:
+        serializedVersion: 2
+        x: 1118
+        y: 764
+        width: 20
+        height: 20
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8806253764bd8b6d0800000000000000
+      internalID: -2974386458249240440
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ampoule_7
+      rect:
+        serializedVersion: 2
+        x: 1171
+        y: 755
+        width: 20
+        height: 20
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ccd09c35cbfb70310800000000000000
+      internalID: 1371275427138047436
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ampoule_8
+      rect:
+        serializedVersion: 2
+        x: 585
+        y: 738
+        width: 20
+        height: 20
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 27844b78eac7fa4d0800000000000000
+      internalID: -3121138927701571470
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ampoule_9
+      rect:
+        serializedVersion: 2
+        x: 614
+        y: 733
+        width: 21
+        height: 20
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6fcd3b9f62b82e7c0800000000000000
+      internalID: -4043516515910951690
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ampoule_10
+      rect:
+        serializedVersion: 2
+        x: 641
+        y: 729
+        width: 20
+        height: 20
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 548f4e95ab0f95d40800000000000000
+      internalID: 5573750697010460741
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ampoule_11
+      rect:
+        serializedVersion: 2
+        x: 675
+        y: 725
+        width: 20
+        height: 20
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bbe8996fe2bb3d020800000000000000
+      internalID: 2365440039679790779
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ampoule_12
+      rect:
+        serializedVersion: 2
+        x: 988
+        y: 724
+        width: 20
+        height: 20
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 705a47791fe1aeb70800000000000000
+      internalID: 8928983234192385287
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ampoule_13
+      rect:
+        serializedVersion: 2
+        x: 1011
+        y: 729
+        width: 20
+        height: 20
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e1cf65d4e4d9cda90800000000000000
+      internalID: -7287777137361748962
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ampoule_14
+      rect:
+        serializedVersion: 2
+        x: 1037
+        y: 737
+        width: 20
+        height: 20
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 17bdc64a1d636d160800000000000000
+      internalID: 7049882540729752433
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ampoule_15
+      rect:
+        serializedVersion: 2
+        x: 1064
+        y: 743
+        width: 20
+        height: 20
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6a45b8b2d6a3c8910800000000000000
+      internalID: 1840910588244087974
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ampoule_16
+      rect:
+        serializedVersion: 2
+        x: 1199
+        y: 739
+        width: 20
+        height: 20
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f63380c32e7adc150800000000000000
+      internalID: 5894552077409465199
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ampoule_17
+      rect:
+        serializedVersion: 2
+        x: 1219
+        y: 723
+        width: 20
+        height: 20
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b6ec82433341e1200800000000000000
+      internalID: 152581647528152683
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ampoule_18
+      rect:
+        serializedVersion: 2
+        x: 448
+        y: 721
+        width: 20
+        height: 20
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9c88a204f47ea6cb0800000000000000
+      internalID: -4869825719482808119
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ampoule_19
+      rect:
+        serializedVersion: 2
+        x: 700
+        y: 721
+        width: 20
+        height: 20
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3b2f315da1cc7a260800000000000000
+      internalID: 7108874952443687603
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ampoule_20
+      rect:
+        serializedVersion: 2
+        x: 736
+        y: 719
+        width: 20
+        height: 20
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: afb543fae1873f2f0800000000000000
+      internalID: -940275824006505478
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ampoule_21
+      rect:
+        serializedVersion: 2
+        x: 768
+        y: 719
+        width: 20
+        height: 20
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a43308ae69683c0a0800000000000000
+      internalID: -6862493424445017270
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ampoule_22
+      rect:
+        serializedVersion: 2
+        x: 800
+        y: 720
+        width: 21
+        height: 20
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e487b1aeca9bca650800000000000000
+      internalID: 6245570935569217614
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ampoule_23
+      rect:
+        serializedVersion: 2
+        x: 832
+        y: 716
+        width: 20
+        height: 20
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ab5700c3078e71eb0800000000000000
+      internalID: -4749071713298254406
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ampoule_24
+      rect:
+        serializedVersion: 2
+        x: 866
+        y: 718
+        width: 20
+        height: 19
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c849fbf331144b500800000000000000
+      internalID: 411025016927261836
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ampoule_25
+      rect:
+        serializedVersion: 2
+        x: 899
+        y: 718
+        width: 20
+        height: 20
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2aeb7dc666855f0c0800000000000000
+      internalID: -4542627452197290334
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ampoule_26
+      rect:
+        serializedVersion: 2
+        x: 930
+        y: 719
+        width: 20
+        height: 20
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e0e841f6a84dcd200800000000000000
+      internalID: 206273373986393614
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ampoule_27
+      rect:
+        serializedVersion: 2
+        x: 958
+        y: 722
+        width: 20
+        height: 20
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d9c6bb868ec435910800000000000000
+      internalID: 1824886835088419997
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ampoule_28
+      rect:
+        serializedVersion: 2
+        x: 1246
+        y: 703
+        width: 20
+        height: 20
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cb0e9180f7134a490800000000000000
+      internalID: -7736003838249148228
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ampoule_29
+      rect:
+        serializedVersion: 2
+        x: 447
+        y: 696
+        width: 20
+        height: 20
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 91e0cdb2a7fcad7c0800000000000000
+      internalID: -4045693191610167783
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ampoule_30
+      rect:
+        serializedVersion: 2
+        x: 1267
+        y: 686
+        width: 20
+        height: 20
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bf2d84193963e0a80800000000000000
+      internalID: -8498795439375985925
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ampoule_31
+      rect:
+        serializedVersion: 2
+        x: 447
+        y: 670
+        width: 20
+        height: 20
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 97d3b26f960a2a9c0800000000000000
+      internalID: -3917392348896871047
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ampoule_32
+      rect:
+        serializedVersion: 2
+        x: 1289
+        y: 671
+        width: 20
+        height: 20
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f2a21f595a7929020800000000000000
+      internalID: 2347105093254457903
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ampoule_33
+      rect:
+        serializedVersion: 2
+        x: 1310
+        y: 656
+        width: 20
+        height: 20
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bc4c8b615d30004b0800000000000000
+      internalID: -5476372933138398005
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ampoule_34
+      rect:
+        serializedVersion: 2
+        x: 449
+        y: 639
+        width: 20
+        height: 20
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: aaf4c7ec68ad5d2e0800000000000000
+      internalID: -2101533378573742166
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ampoule_35
+      rect:
+        serializedVersion: 2
+        x: 1333
+        y: 644
+        width: 20
+        height: 20
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d79d980f53a19f190800000000000000
+      internalID: -7928276850037892739
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ampoule_36
+      rect:
+        serializedVersion: 2
+        x: 1361
+        y: 624
+        width: 20
+        height: 20
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 46569ef326fcd6710800000000000000
+      internalID: 1688233456219809124
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ampoule_37
+      rect:
+        serializedVersion: 2
+        x: 453
+        y: 601
+        width: 20
+        height: 20
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 31fbbd986549efda0800000000000000
+      internalID: -5909122561662533869
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ampoule_38
+      rect:
+        serializedVersion: 2
+        x: 1382
+        y: 613
+        width: 20
+        height: 20
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9e9e5c650ba3de4b0800000000000000
+      internalID: -5409603048357631511
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ampoule_39
+      rect:
+        serializedVersion: 2
+        x: 1400
+        y: 599
+        width: 20
+        height: 20
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7deefd6f0971d4980800000000000000
+      internalID: -8553154205922103593
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ampoule_40
+      rect:
+        serializedVersion: 2
+        x: 451
+        y: 575
+        width: 20
+        height: 20
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ec07ecd9197c7b6c0800000000000000
+      internalID: -4127611105230032690
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ampoule_41
+      rect:
+        serializedVersion: 2
+        x: 1419
+        y: 584
+        width: 20
+        height: 20
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 32b3226343ce44a70800000000000000
+      internalID: 8810426480034200355
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ampoule_42
+      rect:
+        serializedVersion: 2
+        x: 451
+        y: 538
+        width: 20
+        height: 20
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 669573dcffa5de3e0800000000000000
+      internalID: -2022860602913367706
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ampoule_43
+      rect:
+        serializedVersion: 2
+        x: 1434
+        y: 538
+        width: 20
+        height: 19
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 699ea2af2880aa800800000000000000
+      internalID: 624320856980122006
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ampoule_44
+      rect:
+        serializedVersion: 2
+        x: 444
+        y: 510
+        width: 20
+        height: 20
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cede02bae920253e0800000000000000
+      internalID: -2066586398510486036
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ampoule_45
+      rect:
+        serializedVersion: 2
+        x: 1420
+        y: 512
+        width: 20
+        height: 20
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0daeaff107c70c7a0800000000000000
+      internalID: -6358945852832421168
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ampoule_46
+      rect:
+        serializedVersion: 2
+        x: 433
+        y: 483
+        width: 20
+        height: 20
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dcaf84381202de050800000000000000
+      internalID: 5831352420823268045
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ampoule_47
+      rect:
+        serializedVersion: 2
+        x: 1407
+        y: 485
+        width: 20
+        height: 20
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4d1683071d2518080800000000000000
+      internalID: -9186970705374715436
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ampoule_48
+      rect:
+        serializedVersion: 2
+        x: 1389
+        y: 459
+        width: 20
+        height: 20
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 415ea7fd503bf52d0800000000000000
+      internalID: -3287712365151591148
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ampoule_49
+      rect:
+        serializedVersion: 2
+        x: 434
+        y: 432
+        width: 20
+        height: 20
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f5e5f8fdb7e484640800000000000000
+      internalID: 5064384074916781663
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ampoule_50
+      rect:
+        serializedVersion: 2
+        x: 456
+        y: 422
+        width: 20
+        height: 20
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bf30b89f5be7431b0800000000000000
+      internalID: -5677773910166535173
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ampoule_51
+      rect:
+        serializedVersion: 2
+        x: 1349
+        y: 415
+        width: 20
+        height: 20
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a7ff10339d5d03960800000000000000
+      internalID: 7579793301704933242
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ampoule_52
+      rect:
+        serializedVersion: 2
+        x: 1371
+        y: 435
+        width: 20
+        height: 20
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b5c104982f3393990800000000000000
+      internalID: -7405830995456287653
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ampoule_53
+      rect:
+        serializedVersion: 2
+        x: 479
+        y: 405
+        width: 20
+        height: 20
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dedbdbb75cbffcf90800000000000000
+      internalID: -6931044475896742419
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ampoule_54
+      rect:
+        serializedVersion: 2
+        x: 504
+        y: 390
+        width: 20
+        height: 20
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8da0a6a03c2de5910800000000000000
+      internalID: 1828130233894177496
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ampoule_55
+      rect:
+        serializedVersion: 2
+        x: 1325
+        y: 394
+        width: 20
+        height: 20
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 217713a91c828d1c0800000000000000
+      internalID: -4478785017439226094
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ampoule_56
+      rect:
+        serializedVersion: 2
+        x: 529
+        y: 375
+        width: 20
+        height: 20
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b805ed580b5450b40800000000000000
+      internalID: 5405803552190648459
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ampoule_57
+      rect:
+        serializedVersion: 2
+        x: 553
+        y: 361
+        width: 20
+        height: 21
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d796e31f42dd77f70800000000000000
+      internalID: 9185053115781376381
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ampoule_58
+      rect:
+        serializedVersion: 2
+        x: 1265
+        y: 356
+        width: 20
+        height: 20
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 67582ee0e31918030800000000000000
+      internalID: 3495234481539941750
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ampoule_59
+      rect:
+        serializedVersion: 2
+        x: 1295
+        y: 374
+        width: 20
+        height: 20
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ad908a21a361b6980800000000000000
+      internalID: -8544711429328467494
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ampoule_60
+      rect:
+        serializedVersion: 2
+        x: 578
+        y: 350
+        width: 20
+        height: 20
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1b0ee8353b1b08f30800000000000000
+      internalID: 4575852605167558833
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ampoule_61
+      rect:
+        serializedVersion: 2
+        x: 605
+        y: 338
+        width: 20
+        height: 20
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 38838fa1e1e8ef9e0800000000000000
+      internalID: -1585673758835197821
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ampoule_62
+      rect:
+        serializedVersion: 2
+        x: 631
+        y: 330
+        width: 20
+        height: 20
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 69e5d1268cf4788a0800000000000000
+      internalID: -6302981431423574378
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ampoule_63
+      rect:
+        serializedVersion: 2
+        x: 1235
+        y: 342
+        width: 20
+        height: 20
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8a3b8df18a2b33a50800000000000000
+      internalID: 6499735122384303016
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ampoule_64
+      rect:
+        serializedVersion: 2
+        x: 658
+        y: 323
+        width: 20
+        height: 19
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 030b69f8cd495ea90800000000000000
+      internalID: -7285253147179175888
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ampoule_65
+      rect:
+        serializedVersion: 2
+        x: 691
+        y: 314
+        width: 19
+        height: 20
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4f27bfd4dc9763da0800000000000000
+      internalID: -5965446733722062092
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ampoule_66
+      rect:
+        serializedVersion: 2
+        x: 721
+        y: 309
+        width: 20
+        height: 20
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e079812959a4deeb0800000000000000
+      internalID: -4689009630761150706
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ampoule_67
+      rect:
+        serializedVersion: 2
+        x: 1164
+        y: 320
+        width: 20
+        height: 20
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 260524bded62a6870800000000000000
+      internalID: 8676790370685833314
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ampoule_68
+      rect:
+        serializedVersion: 2
+        x: 1202
+        y: 327
+        width: 20
+        height: 20
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 43b46abf7e38e5340800000000000000
+      internalID: 4854462480734636852
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ampoule_69
+      rect:
+        serializedVersion: 2
+        x: 748
+        y: 305
+        width: 20
+        height: 20
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9eb26477d229c3050800000000000000
+      internalID: 5781656745609145321
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ampoule_70
+      rect:
+        serializedVersion: 2
+        x: 780
+        y: 299
+        width: 20
+        height: 20
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7d8b0cbac80fb8450800000000000000
+      internalID: 6092227407916349655
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ampoule_71
+      rect:
+        serializedVersion: 2
+        x: 808
+        y: 296
+        width: 20
+        height: 20
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 63d1046448e0334b0800000000000000
+      internalID: -5462005961793200842
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ampoule_72
+      rect:
+        serializedVersion: 2
+        x: 835
+        y: 292
+        width: 20
+        height: 20
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dbc26360994cd2a60800000000000000
+      internalID: 7650987503485594813
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ampoule_73
+      rect:
+        serializedVersion: 2
+        x: 863
+        y: 293
+        width: 20
+        height: 20
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: eda01e881bf243770800000000000000
+      internalID: 8589542828854545118
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ampoule_74
+      rect:
+        serializedVersion: 2
+        x: 887
+        y: 293
+        width: 20
+        height: 20
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e0efc79b877fcc340800000000000000
+      internalID: 4885551793670258190
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ampoule_75
+      rect:
+        serializedVersion: 2
+        x: 915
+        y: 292
+        width: 20
+        height: 20
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 661175ead0c082e10800000000000000
+      internalID: 2173000073105314150
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ampoule_76
+      rect:
+        serializedVersion: 2
+        x: 945
+        y: 293
+        width: 20
+        height: 20
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4916af6d3c0eae820800000000000000
+      internalID: 2948416037797388692
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ampoule_77
+      rect:
+        serializedVersion: 2
+        x: 971
+        y: 297
+        width: 20
+        height: 20
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8d3a382e08d521a40800000000000000
+      internalID: 5337431316524934104
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ampoule_78
+      rect:
+        serializedVersion: 2
+        x: 995
+        y: 298
+        width: 20
+        height: 20
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f503df6849e58f7e0800000000000000
+      internalID: -1731530064711045025
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ampoule_79
+      rect:
+        serializedVersion: 2
+        x: 1058
+        y: 296
+        width: 20
+        height: 20
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a5e2b819b1107bff0800000000000000
+      internalID: -20546455382315430
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ampoule_80
+      rect:
+        serializedVersion: 2
+        x: 1091
+        y: 298
+        width: 20
+        height: 20
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a12efe5aabfde7a60800000000000000
+      internalID: 7673816807826776602
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ampoule_81
+      rect:
+        serializedVersion: 2
+        x: 1132
+        y: 306
+        width: 20
+        height: 20
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2fe4c5c5122303390800000000000000
+      internalID: -7840711832387170574
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: a82f74ae11231ad4fa7a8252a90703cf
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      ampoule_0: -4871245585974112684
+      ampoule_1: 6288284922302755071
+      ampoule_10: 5573750697010460741
+      ampoule_11: 2365440039679790779
+      ampoule_12: 8928983234192385287
+      ampoule_13: -7287777137361748962
+      ampoule_14: 7049882540729752433
+      ampoule_15: 1840910588244087974
+      ampoule_16: 5894552077409465199
+      ampoule_17: 152581647528152683
+      ampoule_18: -4869825719482808119
+      ampoule_19: 7108874952443687603
+      ampoule_2: -2749992608567756413
+      ampoule_20: -940275824006505478
+      ampoule_21: -6862493424445017270
+      ampoule_22: 6245570935569217614
+      ampoule_23: -4749071713298254406
+      ampoule_24: 411025016927261836
+      ampoule_25: -4542627452197290334
+      ampoule_26: 206273373986393614
+      ampoule_27: 1824886835088419997
+      ampoule_28: -7736003838249148228
+      ampoule_29: -4045693191610167783
+      ampoule_3: -6852425938189362710
+      ampoule_30: -8498795439375985925
+      ampoule_31: -3917392348896871047
+      ampoule_32: 2347105093254457903
+      ampoule_33: -5476372933138398005
+      ampoule_34: -2101533378573742166
+      ampoule_35: -7928276850037892739
+      ampoule_36: 1688233456219809124
+      ampoule_37: -5909122561662533869
+      ampoule_38: -5409603048357631511
+      ampoule_39: -8553154205922103593
+      ampoule_4: -8120245338072708011
+      ampoule_40: -4127611105230032690
+      ampoule_41: 8810426480034200355
+      ampoule_42: -2022860602913367706
+      ampoule_43: 624320856980122006
+      ampoule_44: -2066586398510486036
+      ampoule_45: -6358945852832421168
+      ampoule_46: 5831352420823268045
+      ampoule_47: -9186970705374715436
+      ampoule_48: -3287712365151591148
+      ampoule_49: 5064384074916781663
+      ampoule_5: 8585830710711863127
+      ampoule_50: -5677773910166535173
+      ampoule_51: 7579793301704933242
+      ampoule_52: -7405830995456287653
+      ampoule_53: -6931044475896742419
+      ampoule_54: 1828130233894177496
+      ampoule_55: -4478785017439226094
+      ampoule_56: 5405803552190648459
+      ampoule_57: 9185053115781376381
+      ampoule_58: 3495234481539941750
+      ampoule_59: -8544711429328467494
+      ampoule_6: -2974386458249240440
+      ampoule_60: 4575852605167558833
+      ampoule_61: -1585673758835197821
+      ampoule_62: -6302981431423574378
+      ampoule_63: 6499735122384303016
+      ampoule_64: -7285253147179175888
+      ampoule_65: -5965446733722062092
+      ampoule_66: -4689009630761150706
+      ampoule_67: 8676790370685833314
+      ampoule_68: 4854462480734636852
+      ampoule_69: 5781656745609145321
+      ampoule_7: 1371275427138047436
+      ampoule_70: 6092227407916349655
+      ampoule_71: -5462005961793200842
+      ampoule_72: 7650987503485594813
+      ampoule_73: 8589542828854545118
+      ampoule_74: 4885551793670258190
+      ampoule_75: 2173000073105314150
+      ampoule_76: 2948416037797388692
+      ampoule_77: 5337431316524934104
+      ampoule_78: -1731530064711045025
+      ampoule_79: -20546455382315430
+      ampoule_8: -3121138927701571470
+      ampoule_80: 7673816807826776602
+      ampoule_81: -7840711832387170574
+      ampoule_9: -4043516515910951690
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
