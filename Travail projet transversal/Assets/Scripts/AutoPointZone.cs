@@ -1,239 +1,135 @@
-// AutoPointZone.cs
 using UnityEngine;
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
 using System.Collections;
-=======
 using System.Collections.Generic;
->>>>>>> Stashed changes
-=======
-using System.Collections.Generic;
->>>>>>> Stashed changes
 
 public class AutoPointZone : MonoBehaviour
 {
-    public GameObject prefabEnnemi;
-    public Transform[] spawnPoints;
-    public float intervalleDeTemps = 0.5f;
-    public float bonheurParIntervalle = 1f;
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-    public float activationMinDelay = 5f;
-    public float activationMaxDelay = 10f;
-=======
->>>>>>> Stashed changes
-=======
->>>>>>> Stashed changes
-    public SpriteRenderer zoneRenderer;
+    [Header("Visuel de la zone")]
+    public GameObject zoneVisual;
+    public Color couleurActive = new Color(1f, 1f, 1f, 1f);
+    public Color couleurInactive = new Color(1f, 1f, 1f, 0.3f);
 
-    [Header("Chemin spécial (waypoints sous cet objet)")]
-    [SerializeField] private Transform waypointContainer;
-    private Transform[] cheminVersPointSpecial;
+    [Header("Timing d’activation de la zone")]
+    [Tooltip("Temps minimal avant la prochaine activation en secondes")] public float minActivationInterval = 5f;
+    [Tooltip("Temps maximal avant la prochaine activation en secondes")] public float maxActivationInterval = 10f;
+    [Tooltip("Durée minimale pendant laquelle la zone reste active en secondes")] public float minActiveDuration = 5f;
+    [Tooltip("Durée maximale pendant laquelle la zone reste active en secondes")] public float maxActiveDuration = 8f;
 
+    private SpriteRenderer _zoneSprite;
     private bool joueurDansZone = false;
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
     private bool isActive = false;
-=======
-    private bool isActivated = false;
->>>>>>> Stashed changes
     private float timer = 0f;
-    private List<DrunkEnemyAI> spawnedBourres = new List<DrunkEnemyAI>();
+    private float intervalleDeTemps = 0.5f; // intervalle de gain de bonheur
+    private Coroutine activationRoutine;
 
-    private void Start()
-<<<<<<< Updated upstream
+    private void Awake()
     {
-        if (waypointContainer != null)
-        {
-            int count = waypointContainer.childCount;
-            cheminVersPointSpecial = new Transform[count];
-            for (int i = 0; i < count; i++)
-                cheminVersPointSpecial[i] = waypointContainer.GetChild(i);
-        }
-        else
-        {
-            Debug.LogWarning($"{name} n'a pas de waypointContainer assigné !");
-        }
-
-        StartCoroutine(CycleActivation());
+        if (zoneVisual != null)
+            _zoneSprite = zoneVisual.GetComponent<SpriteRenderer>();
     }
-=======
-    private bool isActivated = false;
-    private float timer = 0f;
-    private List<DrunkEnemyAI> spawnedBourres = new List<DrunkEnemyAI>();
->>>>>>> Stashed changes
 
     private void Start()
     {
-<<<<<<< Updated upstream
-        if (joueurDansZone && isActive)
-=======
-    {
-        if (waypointContainer != null)
->>>>>>> Stashed changes
-=======
-        if (waypointContainer != null)
->>>>>>> Stashed changes
-        {
-            int count = waypointContainer.childCount;
-            cheminVersPointSpecial = new Transform[count];
-            for (int i = 0; i < count; i++)
-                cheminVersPointSpecial[i] = waypointContainer.GetChild(i);
-        }
-        else
-        {
-            Debug.LogWarning($"{name} n'a pas de waypointContainer assigné !");
-        }
-    }
-
-    public void SetZoneActive(bool state)
-    {
-        isActivated = state;
-
-        if (zoneRenderer != null)
-            zoneRenderer.color = state ? Color.green : Color.gray;
-
-        if (isActivated)
-            SpawnerNouveauxEnnemis(2);
-
-        if (isActivated && joueurDansZone)
-            AppelerEnnemis();
+        if (_zoneSprite != null)
+            SetZoneVisual(false);
+        activationRoutine = StartCoroutine(CycleActivation());
     }
 
     private void Update()
     {
-        if (!isActivated || !joueurDansZone) return;
-
-        timer += Time.deltaTime;
-
-        if (timer >= intervalleDeTemps)
+        if (joueurDansZone && isActive)
         {
-            GameManager.instance?.AjouterBonheur(bonheurParIntervalle);
-            timer = 0f;
+            timer += Time.deltaTime;
+            if (timer >= intervalleDeTemps)
+            {
+                GameManager.instance?.AjouterBonheur(1f);
+                timer = 0f;
+            }
         }
     }
 
     private void OnTriggerEnter2D(Collider2D other)
     {
-        if (!other.CompareTag("Player")) return;
-
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
+        if (other.CompareTag("Player"))
+        {
+            joueurDansZone = true;
             if (isActive)
-            {
-                foreach (DrunkEnemyAI ennemi in bourres)
-                {
-                    if (cheminVersPointSpecial != null && cheminVersPointSpecial.Length > 0)
-                    {
-                        Debug.Log("Appel AllerAuPointSpecial pour: " + ennemi.name);
-                        ennemi.AllerAuPointSpecial(cheminVersPointSpecial);
-                    }
-                }
-            }
+                NotifyAllEnemies();
         }
-=======
-=======
->>>>>>> Stashed changes
-        joueurDansZone = true;
-        timer = 0f;
-
-        if (isActivated)
-            AppelerEnnemis();
-<<<<<<< Updated upstream
->>>>>>> Stashed changes
-=======
->>>>>>> Stashed changes
     }
 
     private void OnTriggerExit2D(Collider2D other)
     {
-        if (!other.CompareTag("Player")) return;
-
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-            foreach (DrunkEnemyAI ennemi in bourres)
-                ennemi.ReprendrePatrouille();
+        if (other.CompareTag("Player"))
+        {
+            joueurDansZone = false;
+            ResetAllEnemies();
         }
     }
 
-    IEnumerator CycleActivation()
+    private IEnumerator CycleActivation()
     {
         while (true)
         {
-            yield return new WaitForSeconds(Random.Range(activationMinDelay, activationMaxDelay));
-            SetActiveState(true);
-            yield return new WaitForSeconds(Random.Range(5f, 8f));
-            SetActiveState(false);
+            yield return new WaitForSeconds(Random.Range(minActivationInterval, maxActivationInterval));
+            SetZoneState(true);
+            yield return new WaitForSeconds(Random.Range(minActiveDuration, maxActiveDuration));
+            SetZoneState(false);
         }
     }
 
-    private void SetActiveState(bool state)
+    private void SetZoneState(bool state)
     {
-        isActive = AHHHHJ;
-
-        if (zoneRenderer != null)
-            zoneRenderer.color = state ? Color.green : Color.gray;
-
-        if (isActive && joueurDansZone)
-        {
-            foreach (DrunkEnemyAI ennemi in bourres)
-            {
-                if (cheminVersPointSpecial != null && cheminVersPointSpecial.Length > 0)
-                {
-                    Debug.Log("Appel AllerAuPointSpecial pour: " + ennemi.name);
-                    ennemi.AllerAuPointSpecial(cheminVersPointSpecial);
-                }
-=======
-        joueurDansZone = false;
+        isActive = state;
+        SetZoneVisual(state);
+        if (state && joueurDansZone)
+            NotifyAllEnemies();
+        if (!state)
+            ResetAllEnemies();
     }
 
-    private void AppelerEnnemis()
+    /// <summary>
+    /// Active ou désactive manuellement la zone
+    /// </summary>
+    public void ForceSetState(bool state)
     {
-        Debug.Log("→ AppelerEnnemis() appelé sur zone " + name);
-
-        foreach (DrunkEnemyAI ennemi in spawnedBourres)
-        {
-            if (cheminVersPointSpecial != null && cheminVersPointSpecial.Length > 0)
-            {
-=======
-        joueurDansZone = false;
+        if (isActive == state)
+            return;
+        // Arrêter la coroutine temporairement pour éviter conflits
+        if (activationRoutine != null)
+            StopCoroutine(activationRoutine);
+        SetZoneState(state);
+        // Relancer la coroutine
+        activationRoutine = StartCoroutine(CycleActivation());
     }
 
-    private void AppelerEnnemis()
+    private void SetZoneVisual(bool state)
     {
-        Debug.Log("→ AppelerEnnemis() appelé sur zone " + name);
+        if (_zoneSprite != null)
+            _zoneSprite.color = state ? couleurActive : couleurInactive;
+    }
 
-        foreach (DrunkEnemyAI ennemi in spawnedBourres)
+    private void NotifyAllEnemies()
+    {
+        var enemies = EnemyWaveManager.instance.GetActiveEnemies();
+        foreach (var go in enemies)
         {
-            if (cheminVersPointSpecial != null && cheminVersPointSpecial.Length > 0)
-            {
->>>>>>> Stashed changes
-                Debug.Log("→ Appel AllerAuPointSpecial pour: " + ennemi.name);
-                ennemi.AllerAuPointSpecial(cheminVersPointSpecial);
-            }
-            else
-            {
-                Debug.LogWarning("Aucun chemin spécial assigné à " + name);
-<<<<<<< Updated upstream
->>>>>>> Stashed changes
-=======
->>>>>>> Stashed changes
-            }
+            if (go == null) continue;
+            var ai = go.GetComponent<DrunkEnemyAI>();
+            if (ai != null)
+                ai.AllerVersPointUnique(transform);
         }
     }
 
-    private void SpawnerNouveauxEnnemis(int nombre)
+    private void ResetAllEnemies()
     {
-        for (int i = 0; i < nombre; i++)
+        var enemies = EnemyWaveManager.instance.GetActiveEnemies();
+        foreach (var go in enemies)
         {
-            int indexSpawn = i % spawnPoints.Length;
-            Transform point = spawnPoints[indexSpawn];
-
-            GameObject go = Instantiate(prefabEnnemi, point.position, Quaternion.identity);
-            DrunkEnemyAI nouveau = go.GetComponent<DrunkEnemyAI>();
-
-            if (nouveau != null)
-                spawnedBourres.Add(nouveau);
+            if (go == null) continue;
+            var ai = go.GetComponent<DrunkEnemyAI>();
+            if (ai != null)
+                ai.ReprendrePatrouille();
         }
     }
 }

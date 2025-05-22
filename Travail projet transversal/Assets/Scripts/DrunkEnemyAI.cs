@@ -1,4 +1,3 @@
-// DrunkEnemyAI.cs
 using UnityEngine;
 
 [RequireComponent(typeof(SpriteRenderer))]
@@ -7,23 +6,16 @@ public class DrunkEnemyAI : MonoBehaviour
     [Header("Data")]
     public EnemyData data;
 
-    [Header("Paths")]
-    public Transform[] cheminPatrouille;
+    [Header("Chemin de patrouille")]
+    public Transform[] cheminPatrouille; // Patrouille normale
 
-    private Transform[] cheminVersPointSpecial;
     private Transform[] cheminActuel;
     private int currentPoint = 0;
     private bool isStopped = false;
-    private bool versPointSpecial = false;
 
-    private float speed;
-<<<<<<< Updated upstream
-
-    private void Start()
-    {
-=======
+    private float speed = 1f;
     private Animator animator;
-    private Vector2 lastDirection;
+    private Vector2 lastDirection = Vector2.down;
     private SpriteRenderer spriteRenderer;
 
     private void Start()
@@ -31,69 +23,53 @@ public class DrunkEnemyAI : MonoBehaviour
         animator = GetComponent<Animator>();
         spriteRenderer = GetComponent<SpriteRenderer>();
 
->>>>>>> Stashed changes
         if (data != null)
         {
             speed = data.speed;
         }
         else
         {
-            Debug.LogWarning(" EnemyData non mis sur " + gameObject.name);
+            Debug.LogWarning($" EnemyData non assigné sur {name}. Vitesse par défaut utilisée : {speed}");
         }
 
-        cheminActuel = cheminPatrouille;
+        if (cheminPatrouille != null && cheminPatrouille.Length > 0)
+        {
+            ActiverPatrouilleNormale();
+        }
+        else
+        {
+            Debug.LogWarning($" Aucun chemin de patrouille défini pour {name}");
+            isStopped = true;
+        }
     }
 
     private void Update()
     {
         if (isStopped || cheminActuel == null || cheminActuel.Length == 0)
         {
-            if (isStopped)
-                Debug.Log(name + " est stoppé");
-
             SetIdleAnimation();
             return;
         }
 
         Transform target = cheminActuel[currentPoint];
+        if (target == null) return;
+
+        Vector2 direction = (target.position - transform.position).normalized;
         transform.position = Vector2.MoveTowards(transform.position, target.position, speed * Time.deltaTime);
 
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-        if (Vector2.Distance(transform.position, target.position) < 0.2f)
-=======
-=======
->>>>>>> Stashed changes
         if (direction != Vector2.zero)
         {
             lastDirection = direction;
-
-            if (animator != null)
-            {
-                MettreAJourAnimations(direction);
-            }
-
+            MettreAJourAnimations(direction);
             UpdateSpriteFlip(direction);
         }
 
         if (Vector2.Distance(transform.position, target.position) < 0.1f)
->>>>>>> Stashed changes
         {
-            currentPoint++;
-
-            if (currentPoint >= cheminActuel.Length)
-            {
-                currentPoint = 0; // boucle sur le chemin au lieu de s'arrêter
-            }
+            currentPoint = (currentPoint + 1) % cheminActuel.Length;
         }
     }
 
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-    public void AllerAuPointSpecial()
-=======
-=======
->>>>>>> Stashed changes
     private void SetIdleAnimation()
     {
         if (animator == null) return;
@@ -108,11 +84,9 @@ public class DrunkEnemyAI : MonoBehaviour
     }
 
     private void MettreAJourAnimations(Vector2 dir)
-<<<<<<< Updated upstream
->>>>>>> Stashed changes
-=======
->>>>>>> Stashed changes
     {
+        if (animator == null) return;
+
         animator.SetBool("IsUp", dir.y > 0.5f);
         animator.SetBool("IsDown", dir.y < -0.5f);
         animator.SetBool("IsRight", Mathf.Abs(dir.x) > 0.1f);
@@ -124,46 +98,46 @@ public class DrunkEnemyAI : MonoBehaviour
         spriteRenderer.flipX = dir.x < -0.1f;
     }
 
-    public void AllerAuPointSpecial(Transform[] chemin)
+    // est Appelé quand la zone est active
+    public void AllerVersPointUnique(Transform point)
     {
-        Debug.Log(name + " → AllerAuPointSpecial() appelé");
-
-        if (chemin == null || chemin.Length == 0)
+        if (point == null)
         {
-            Debug.LogWarning("Chemin vide pour " + name);
+            Debug.LogWarning($"{name} : point unique non assigné !");
             return;
         }
 
-        cheminVersPointSpecial = chemin;
-        cheminActuel = cheminVersPointSpecial;
+        cheminActuel = new Transform[] { point };
         currentPoint = 0;
-        versPointSpecial = true;
         isStopped = false;
+
+        Debug.Log($"{name} se dirige vers {point.name}");
     }
 
-    public void AllerAuPointSpecial(Transform[] nouveauChemin)
+    public void ActiverPatrouilleNormale()
     {
-        if (nouveauChemin == null || nouveauChemin.Length == 0) return;
+        if (cheminPatrouille == null || cheminPatrouille.Length == 0)
+        {
+            Debug.LogWarning($"{name} : cheminPatrouille vide !");
+            isStopped = true;
+            return;
+        }
 
-        cheminVersPointSpecial = nouveauChemin;
-        cheminActuel = cheminVersPointSpecial;
+        cheminActuel = cheminPatrouille;
         currentPoint = 0;
-        versPointSpecial = true;
         isStopped = false;
 
-        Debug.Log($"[{gameObject.name}] Reçu nouveau chemin spécial de {nouveauChemin.Length} waypoints.");
+        Debug.Log($" {name} suit sa patrouille normale.");
     }
 
     public void ReprendrePatrouille()
     {
-        cheminActuel = cheminPatrouille;
-        currentPoint = 0;
-        versPointSpecial = false;
-        isStopped = false;
+        ActiverPatrouilleNormale();
     }
 
     public void Arreter()
     {
         isStopped = true;
+        Debug.Log($" {name} stoppé.");
     }
 }

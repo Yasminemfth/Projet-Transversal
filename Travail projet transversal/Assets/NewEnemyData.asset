@@ -13,6 +13,6 @@ MonoBehaviour:
   m_Name: NewEnemyData
   m_EditorClassIdentifier: 
   enemyName: Ennemy
-  speed: 1
+  speed: 1.5
   detectionRadius: 1.5
   enemyColor: {r: 1, g: 1, b: 1, a: 1}

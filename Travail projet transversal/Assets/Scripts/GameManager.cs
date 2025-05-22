@@ -1,4 +1,3 @@
-// GameManager.cs
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -6,15 +5,15 @@ public class GameManager : MonoBehaviour
 {
     public static GameManager instance;
 
-    [Header("Bonheur")]
+    [Header("Bonheur actuel")]
     public float bonheur = 100f;
-    public float bonheurMax = 100f;
-    public bool limiterBonheurMax = true;
 
-    [Header("UI")] 
+    [Header("Limites")]
+    public bool limiterBonheurMax = true;
+    public float bonheurMax = 100f;
+
+    [Header("Référence UI")]
     public Slider bonheurSlider;
-    public Image bonheurFillImage;
-    public Gradient bonheurCouleur;
 
     private void Awake()
     {
@@ -24,11 +23,25 @@ public class GameManager : MonoBehaviour
 
     private void Start()
     {
+        // Initialise le slider si présent
         if (bonheurSlider != null)
         {
             bonheurSlider.maxValue = bonheurMax;
             bonheurSlider.value = bonheur;
-            UpdateBonheurUI();
+        }
+        else
+        {
+            Debug.LogWarning("🎛️ Slider de bonheur non assigné dans GameManager !");
+        }
+    }
+
+    private void Update()
+    {
+        // Met à jour le slider chaque frame
+        if (bonheurSlider != null)
+        {
+            bonheurSlider.maxValue = bonheurMax;
+            bonheurSlider.value = bonheur;
         }
     }
 
@@ -39,7 +52,6 @@ public class GameManager : MonoBehaviour
         if (limiterBonheurMax && bonheur > bonheurMax)
             bonheur = bonheurMax;
 
-        UpdateBonheurUI();
         Debug.Log("Bonheur : " + (int)bonheur);
     }
 
@@ -50,16 +62,6 @@ public class GameManager : MonoBehaviour
         if (bonheur < 0f)
             bonheur = 0f;
 
-    
+        Debug.Log("Bonheur : " + (int)bonheur);
     }
-
-    private void UpdateBonheurUI()
-    {
-        if (bonheurSlider != null)
-        {
-            bonheurSlider.value = bonheur;
-            if (bonheurFillImage != null && bonheurCouleur != null)
-                bonheurFillImage.color = bonheurCouleur.Evaluate(bonheurSlider.normalizedValue);
-        }
-    }
-} 
+}

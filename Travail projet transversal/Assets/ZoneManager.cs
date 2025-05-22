@@ -4,36 +4,40 @@ using System.Collections.Generic;
 
 public class ZoneManager : MonoBehaviour
 {
-    public List<AutoPointZone> zones;
-    public float switchInterval = 10f;
+    [Header("Liste de toutes les zones à gérer")]
+    public List<AutoPointZone> toutesLesZones;
 
-    private AutoPointZone zoneActive;
+    [Header("Temps entre les changements de zone")]
+    public float tempsEntreChangements = 10f;
 
-    void Start()
+    private void Start()
     {
-        StartCoroutine(SwitchZonesLoop());
+        StartCoroutine(ActiverZonesSuccessivement());
     }
 
-    IEnumerator SwitchZonesLoop()
+    IEnumerator ActiverZonesSuccessivement()
     {
         while (true)
         {
-            ActiverUneZoneAleatoire();
-            yield return new WaitForSeconds(switchInterval);
+            if (toutesLesZones == null || toutesLesZones.Count == 0)
+            {
+                Debug.LogWarning(" Aucune zone assignée dans ZoneManager !");
+                yield break;
+            }
+
+            // Choisir une zone aléatoire
+            int index = Random.Range(0, toutesLesZones.Count);
+            AutoPointZone zoneActive = toutesLesZones[index];
+
+            // Désactiver toutes les autres
+            foreach (var zone in toutesLesZones)
+                zone.ForceSetState(false);
+
+            // Activer celle choisie
+            zoneActive.ForceSetState(true);
+            Debug.Log($" Zone activée : {zoneActive.gameObject.name}");
+
+            yield return new WaitForSeconds(tempsEntreChangements);
         }
-    }
-
-    void ActiverUneZoneAleatoire()
-    {
-        if (zones.Count == 0) return;
-
-        // Désactiver toutes les zones (grises)
-        foreach (var zone in zones)
-            zone.SetZoneActive(false);
-
-        // Activer une au hasard (verte)
-        int index = Random.Range(0, zones.Count);
-        zoneActive = zones[index];
-        zoneActive.SetZoneActive(true);
     }
 }
