@@ -21,7 +21,7 @@ public class EnemyWaveManager : MonoBehaviour
     [Tooltip("Nombre d'ennemis par vague")] public int waveSize = 2;
     [Tooltip("Délai avant la première vague (secondes)")] public float initialDelay = 15f;
     [Tooltip("Intervalle entre chaque vague (secondes)")] public float waveInterval = 15f;
-    [Tooltip("Nombre total d'ennemis à faire apparaître sur la partie")] public int totalEnemies = 8;
+    [Tooltip("Nombre total d'ennemis à faire apparaître sur la partie")] public int totalEnemies = 1;
 
     private int _spawnedCount = 0;
     private List<GameObject> _activeEnemies = new List<GameObject>();

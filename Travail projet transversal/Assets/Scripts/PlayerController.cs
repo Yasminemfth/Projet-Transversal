@@ -2,81 +2,94 @@ using UnityEngine;
 
 [RequireComponent(typeof(Rigidbody2D))]
 [RequireComponent(typeof(SpriteRenderer))]
+[RequireComponent(typeof(AudioSource))]  // on ajoute AudioSource
 public class PlayerController : MonoBehaviour
 {
+    [Header("Mouvement")]
     public float speed = 5f;
     public bool animationVerticaleActive = false;
+
+    [Header("Bruits de pas")]
+    [Tooltip("Clips à jouer pour les pas")]
+    public AudioClip[] footstepClips;
+    [Tooltip("Intervalle minimum (s) entre deux pas")]
+    public float stepInterval = 0.5f;
 
     private Vector2 moveInput;
     private Rigidbody2D rb;
     private Animator animator;
     private SpriteRenderer spriteRenderer;
+    private AudioSource audioSource;
+
+    private float stepTimer = 0f;
 
     void Awake()
     {
         rb = GetComponent<Rigidbody2D>();
         animator = GetComponent<Animator>();
         spriteRenderer = GetComponent<SpriteRenderer>();
+        audioSource = GetComponent<AudioSource>();
+
+        // AudioSource setup
+        audioSource.playOnAwake = false;
+        audioSource.loop = false;
     }
 
     void Update()
     {
+        // Lecture de l'input
         moveInput.x = Input.GetAxis("Horizontal");
         moveInput.y = Input.GetAxis("Vertical");
 
-        FlipBasedOnInput();
-
-        if (animator != null && animationVerticaleActive)
-        {
-            bool isMovingUp = moveInput.y > 0.1f;
-            bool isMovingDown = moveInput.y < -0.1f;
-            bool isMovingRight = moveInput.x > 0.1f;
-            bool isMovingLeft = moveInput.x < -0.1f;
-
-            animator.SetBool("IsMovingUp", isMovingUp);
-            animator.SetBool("IsMovingDown", isMovingDown);
-            animator.SetBool("IsMovingRight", isMovingRight);
-            animator.SetBool("IsMovingLeft", isMovingLeft);
-
-        }
+        HandleFlip();
+        HandleAnimation();
+        HandleFootsteps();
     }
 
-    void FlipBasedOnInput()
-        {
-            if (moveInput.x > 0.1f)
-                spriteRenderer.flipX = false;
-            else if (moveInput.x < -0.1f)
-                spriteRenderer.flipX = true;
-        }
+    void HandleFlip()
+    {
+        if (moveInput.x > 0.1f) spriteRenderer.flipX = false;
+        else if (moveInput.x < -0.1f) spriteRenderer.flipX = true;
+    }
 
     void HandleAnimation()
     {
         if (animator == null) return;
 
+        bool isMoving = moveInput.magnitude > 0.1f;
+        animator.SetBool("IsMoving", isMoving);
+
         if (animationVerticaleActive)
         {
-            bool isMovingUp = moveInput.y > 0.1f;
-            bool isMovingDown = moveInput.y < -0.1f;
-
-            animator.SetBool("IsMovingUp", isMovingUp);
-            animator.SetBool("IsMovingDown", isMovingDown);
-
-
-            if (isMovingUp) animator.SetBool("IsMovingDown", false);
-            if (isMovingDown) animator.SetBool("IsMovingUp", false);
-
-            Debug.Log($"Up: {isMovingUp}, Down: {isMovingDown}, InputY: {moveInput.y}");
+            animator.SetBool("IsMovingUp", moveInput.y > 0.1f);
+            animator.SetBool("IsMovingDown", moveInput.y < -0.1f);
+            animator.SetBool("IsMovingRight", moveInput.x > 0.1f);
+            animator.SetBool("IsMovingLeft", moveInput.x < -0.1f);
         }
     }
 
-    void HandleFlip()
+    void HandleFootsteps()
     {
-        if (spriteRenderer == null) return;
+        // Si on ne se déplace pas, on reset le timer et on ne joue pas de son
+        if (moveInput.magnitude < 0.1f)
+        {
+            stepTimer = stepInterval;
+            return;
+        }
 
-        if (moveInput.x > 0.1f)
-            spriteRenderer.flipX = false;
-        else if (moveInput.x < -0.1f)
-            spriteRenderer.flipX = true;
+        // On avance le timer
+        stepTimer -= Time.deltaTime;
+        if (stepTimer <= 0f && footstepClips.Length > 0)
+        {
+            PlayRandomFootstep();
+            stepTimer = stepInterval;
+        }
+    }
+
+    void PlayRandomFootstep()
+    {
+        int idx = Random.Range(0, footstepClips.Length);
+        audioSource.PlayOneShot(footstepClips[idx]);
     }
 
     void FixedUpdate()
@@ -84,4 +97,4 @@ public class PlayerController : MonoBehaviour
         Vector2 moveAmount = moveInput * speed * Time.fixedDeltaTime;
         rb.MovePosition(rb.position + moveAmount);
     }
-} 
+}

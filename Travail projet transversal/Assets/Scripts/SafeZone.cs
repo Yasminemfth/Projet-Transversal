@@ -5,11 +5,14 @@ using UnityEngine.UI;
 
 public class SafeZone : MonoBehaviour
 {
-    [Tooltip("Nombre maximal d'ennemis retirés par activation")] public int maxRemovalsPerUse = 2;
-    [Tooltip("Cooldown en secondes entre deux utilisations")] public float removalCooldown = 15f;
+    [Tooltip("Nombre maximal d'ennemis retirés par activation")]
+    public int maxRemovalsPerUse = 8;
+    [Tooltip("Cooldown en secondes entre deux utilisations")]
+    public float removalCooldown = 15f;
 
     [Header("UI Interaction Prompt")]
-    [Tooltip("Objet UI (Text ou panel) à afficher pour l'interaction")] public GameObject promptUI;
+    [Tooltip("Objet UI (Text ou panel) à afficher pour l'interaction")]
+    public GameObject promptUI;
 
     private bool joueurDansZone = false;
     private bool canRemove = true;
@@ -25,7 +28,7 @@ public class SafeZone : MonoBehaviour
         if (other.CompareTag("Player"))
         {
             joueurDansZone = true;
-            if (promptUI != null)
+            if (canRemove && promptUI != null)
                 promptUI.SetActive(true);
         }
     }
@@ -42,8 +45,11 @@ public class SafeZone : MonoBehaviour
 
     private void Update()
     {
-        if (!joueurDansZone || !canRemove) return;
+        // On ne fait rien si on n'est pas dans la zone ou si on est en cooldown
+        if (!joueurDansZone || !canRemove) 
+            return;
 
+        // Seulement au clic sur E
         if (Input.GetKeyDown(KeyCode.E))
         {
             if (promptUI != null)
@@ -56,32 +62,38 @@ public class SafeZone : MonoBehaviour
     {
         canRemove = false;
 
-        List<GameObject> actifs = EnemyWaveManager.instance.GetActiveEnemies();
+        // 1) Supprime jusqu'à maxRemovalsPerUse ennemis
+        var actifs = EnemyWaveManager.instance.GetActiveEnemies();
         int removed = 0;
-
         for (int i = actifs.Count - 1; i >= 0 && removed < maxRemovalsPerUse; i--)
         {
-            GameObject ennemi = actifs[i];
+            var ennemi = actifs[i];
             if (ennemi != null)
             {
+                // Stoppe l'IA
                 var ai = ennemi.GetComponent<DrunkEnemyAI>();
-                if (ai != null)
-                    ai.Arreter();
+                if (ai != null) ai.Arreter();
 
+                // Détruit l'ennemi
                 Destroy(ennemi);
-                actifs.RemoveAt(i);
                 removed++;
             }
         }
 
         Debug.Log($"SafeZone: {removed} ennemis retirés, cooldown de {removalCooldown}s.");
 
+        // 2) Attend le cooldown
         yield return new WaitForSeconds(removalCooldown);
-        canRemove = true;
 
+        // 3) Relance le cycle de vagues
+        EnemyWaveManager.instance.ClearEnemiesAndResetWave();
+        Debug.Log("SafeZone: vagues réinitialisées.");
+
+        // 4) Réautorise l'utilisation et affiche de nouveau le prompt si on est toujours dedans
+        canRemove = true;
         if (joueurDansZone && promptUI != null)
             promptUI.SetActive(true);
 
-        Debug.Log("SafeZone: prêt à retirer de nouveaux ennemis.");
+        Debug.Log("SafeZone: prêt pour une nouvelle activation.");
     }
 }

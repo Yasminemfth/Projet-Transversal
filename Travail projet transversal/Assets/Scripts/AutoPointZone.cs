@@ -10,16 +10,30 @@ public class AutoPointZone : MonoBehaviour
     public Color couleurInactive = new Color(1f, 1f, 1f, 0.3f);
 
     [Header("Timing d’activation de la zone")]
-    [Tooltip("Temps minimal avant la prochaine activation en secondes")] public float minActivationInterval = 5f;
-    [Tooltip("Temps maximal avant la prochaine activation en secondes")] public float maxActivationInterval = 10f;
-    [Tooltip("Durée minimale pendant laquelle la zone reste active en secondes")] public float minActiveDuration = 5f;
-    [Tooltip("Durée maximale pendant laquelle la zone reste active en secondes")] public float maxActiveDuration = 8f;
+    [Tooltip("Temps minimal avant la prochaine activation en secondes")]
+    public float minActivationInterval = 5f;
+    [Tooltip("Temps maximal avant la prochaine activation en secondes")]
+    public float maxActivationInterval = 10f;
+    [Tooltip("Durée minimale pendant laquelle la zone reste active en secondes")]
+    public float minActiveDuration = 5f;
+    [Tooltip("Durée maximale pendant laquelle la zone reste active en secondes")]
+    public float maxActiveDuration = 8f;
+
+    [Header("Bonus de bonheur")]
+    [Tooltip("Intervalle (s) pour l'ajout de bonheur")]
+    public float bonheurTick = 0.5f;
+    [Tooltip("Quantité de bonheur ajoutée à chaque tick")]
+    public float bonheurAmount = 2f;
+
+    [Header("Notification Ennemi")]
+    [Tooltip("Fréquence (s) d'appel à NotifyAllEnemies")]
+    public float notifyCooldown = 1f;
 
     private SpriteRenderer _zoneSprite;
     private bool joueurDansZone = false;
-    private bool isActive = false;
-    private float timer = 0f;
-    private float intervalleDeTemps = 0.5f; // intervalle de gain de bonheur
+    private bool isActive       = false;
+    private float bonheurTimer  = 0f;
+    private float notifyTimer   = 0f;
     private Coroutine activationRoutine;
 
     private void Awake()
@@ -32,6 +46,7 @@ public class AutoPointZone : MonoBehaviour
     {
         if (_zoneSprite != null)
             SetZoneVisual(false);
+
         activationRoutine = StartCoroutine(CycleActivation());
     }
 
@@ -39,40 +54,50 @@ public class AutoPointZone : MonoBehaviour
     {
         if (joueurDansZone && isActive)
         {
-            timer += Time.deltaTime;
-            if (timer >= intervalleDeTemps)
+            // Bonus de bonheur
+            bonheurTimer += Time.deltaTime;
+            if (bonheurTimer >= bonheurTick)
             {
-                GameManager.instance?.AjouterBonheur(1f);
-                timer = 0f;
+                GameManager.instance?.AjouterBonheur(bonheurAmount);
+                bonheurTimer = 0f;
+            }
+
+            // Notification périodique aux ennemis
+            notifyTimer += Time.deltaTime;
+            if (notifyTimer >= notifyCooldown)
+            {
+                NotifyAllEnemies();
+                notifyTimer = 0f;
             }
         }
     }
 
     private void OnTriggerEnter2D(Collider2D other)
     {
-        if (other.CompareTag("Player"))
-        {
-            joueurDansZone = true;
-            if (isActive)
-                NotifyAllEnemies();
-        }
+        if (!other.CompareTag("Player")) return;
+
+        joueurDansZone = true;
+        if (isActive)
+            NotifyAllEnemies();
     }
 
     private void OnTriggerExit2D(Collider2D other)
     {
-        if (other.CompareTag("Player"))
-        {
-            joueurDansZone = false;
-            ResetAllEnemies();
-        }
+        if (!other.CompareTag("Player")) return;
+
+        joueurDansZone = false;
+        ResetAllEnemies();
     }
 
     private IEnumerator CycleActivation()
     {
         while (true)
         {
+            // Attente avant activation
             yield return new WaitForSeconds(Random.Range(minActivationInterval, maxActivationInterval));
             SetZoneState(true);
+
+            // Durée d'activation
             yield return new WaitForSeconds(Random.Range(minActiveDuration, maxActiveDuration));
             SetZoneState(false);
         }
@@ -82,24 +107,18 @@ public class AutoPointZone : MonoBehaviour
     {
         isActive = state;
         SetZoneVisual(state);
+
+        // Si on active pendant que le joueur est déjà dedans
         if (state && joueurDansZone)
             NotifyAllEnemies();
-        if (!state)
-            ResetAllEnemies();
     }
 
-    /// <summary>
-    /// Active ou désactive manuellement la zone
-    /// </summary>
     public void ForceSetState(bool state)
     {
-        if (isActive == state)
-            return;
-        // Arrêter la coroutine temporairement pour éviter conflits
         if (activationRoutine != null)
             StopCoroutine(activationRoutine);
+
         SetZoneState(state);
-        // Relancer la coroutine
         activationRoutine = StartCoroutine(CycleActivation());
     }
 
